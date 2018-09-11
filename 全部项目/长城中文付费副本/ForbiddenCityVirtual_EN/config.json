@@ -1,0 +1,438 @@
+[
+	{
+		"id" : 1,
+		"name_cn" : "步行街",
+		"name_en" : "Pedestrian Street",
+		"scname":"scene_001",
+		"longitude" : 116.01045101881027,
+		"latitude" : 40.35663162160727,
+		"sound_en" : "scene_001_en.mp3",
+		"sound_cn" : "scene_001.mp3",
+		"detlaX" : "594",
+		"detlaY" : "452"
+		
+	},
+		{
+		"id" : 2,
+		"name_cn" : "长城博物馆",
+		"name_en" : "Great Wall Museum",
+		"scname":"scene_002",
+		"longitude" : 116.0102177,
+		"latitude" : 40.3578150,
+		"sound_en" : "scene_002_en.mp3",
+		"sound_cn" : "scene_002.mp3",
+		"detlaX" : "701",
+		"detlaY" : "303"
+		},
+
+	{
+		"id" : 3,
+		"name_cn" : "长城全周影院",
+		"name_en" : "Great Wall Circle Cinema",
+		"scname":"scene_003",
+		"longitude" : 116.00964367389679,
+		"latitude" : 40.35716917046512,
+		"sound_en" : "scene_003_en.mp3",
+		"sound_cn" : "scene_003.mp3",
+		"detlaX" : "760",
+		"detlaY" : "345"
+		},
+
+	{
+		"id" : 4,
+		"name_cn" : "北门锁钥",
+		"name_en" : "Key to the Northern Gate of Beijing",
+		"scname":"scene_004",
+		"longitude" : 116.01365894079208,
+		"latitude" : 40.35561169773625,
+		"sound_en" : "scene_004_en.mp3",
+		"sound_cn" : "scene_004.mp3",
+		"detlaX" : "700",
+		"detlaY" : "500"
+		},
+
+	{
+		"id" : 5,
+		"name_cn" : "望京石",
+		"name_en" : "Wangjing Rock",
+		"scname":"scene_005",
+		"longitude" : 116.01434290409088,
+		"latitude" : 40.355215170062344,
+		"sound_en" : "scene_005_en.mp3",
+		"sound_cn" : "scene_005.mp3",
+		"detlaX" : "920",
+		"detlaY" : "519"
+		},
+
+	{
+		"id" : 6,
+		"name_cn" : "好汉碑",
+		"name_en" : "The Hero Monument",
+		"scname":"scene_006",
+		"longitude" : 116.01332902908325,
+		"latitude" : 40.35533371981749,
+		"sound_en" : "scene_006_en.mp3",
+		"sound_cn" : "scene_006.mp3",
+		"detlaX" : "799",
+		"detlaY" : "537"
+	},
+		{
+		"id" : 7,
+		"name_cn" : "南一楼",
+		"name_en" : "The first South Tower",
+		"scname":"scene_007",
+		"longitude" : 116.01332902908325,
+		"latitude" : 40.35533371981749,
+		"sound_en" : "scene_007_en.mp3",
+		"sound_cn" : "scene_007.mp3",
+		"detlaX" : "742",
+		"detlaY" : "564"
+	},
+		{
+		"id" : 8,
+		"name_cn" : "南二楼红叶",
+		"name_en" : "Red Leaves at the second South Tower",
+		"scname":"scene_008",
+		"longitude" : 116.0129776597023,
+		"latitude" : 40.354597890383225,
+		"sound_en" : "scene_008_en.mp3",
+		"sound_cn" : "scene_008.mp3",
+		"detlaX" : "741",
+		"detlaY" : "596"
+	},
+		{
+		"id" : 9,
+		"name_cn" : "南二楼",
+		"name_en" : "The second South Tower",
+		"scname":"scene_009",
+		"longitude" : 116.01294547319412,
+		"latitude" : 40.354642857967875,
+		"sound_en" : "scene_009_en.mp3",
+		"sound_cn" : "scene_009.mp3",
+		"detlaX" : "738",
+		"detlaY" : "620"
+	},
+		
+	{
+		"id" : 10,
+		"name_cn" : "南三楼",
+		"name_en" : "The third South Tower",
+		"scname":"scene_010",
+		"longitude" : 116.01291328668594,
+		"latitude" : 40.35352887942649,
+		"sound_en" : "scene_010_en.mp3",
+		"sound_cn" : "scene_010.mp3",
+		"detlaX" : "740",
+		"detlaY" : "668"
+		
+	},	
+
+	{
+		"id" : 11,
+		"name_cn" : "南城墙一",
+		"name_en" : "South Wall Scene One",
+		"scname":"scene_011",
+		"longitude" : 116.01300984621048,
+		"latitude" : 40.35350230723656,
+		"sound_en" : "scene_011_en.mp3",
+		"sound_cn" : "scene_011.mp3",
+		"detlaX" : "730",
+		"detlaY" : "698"
+		
+	},	
+
+	{
+		"id" : 12,
+		"name_cn" : "南城墙二",
+		"name_en" : "South Wall Scene Two",
+		"scname":"scene_012",
+		"longitude" : 116.01307153701782,
+		"latitude" : 40.353731236529384,
+		"sound_en" : "scene_012_en.mp3",
+		"sound_cn" : "scene_012.mp3",
+		"detlaX" : "699",
+		"detlaY" : "708"
+		
+	},	
+
+	{
+		"id" : 13,
+		"name_cn" : "南城墙三",
+		"name_en" : "South Wall Scene Three",
+		"scname":"scene_013",
+		"longitude" : 116.0127979516983,
+		"latitude" : 40.35313029547813,
+		"sound_en" : "scene_013_en.mp3",
+		"sound_cn" : "scene_013.mp3",
+		"detlaX" : "676",
+		"detlaY" : "702"
+		
+	},	
+
+	{
+		"id" : 14,
+		"name_cn" : "南城墙四",
+		"name_en" : "South Wall Scene Four",
+		"scname":"scene_014",
+		"longitude" : 116.01277381181717,
+		"latitude" : 40.35305262243441,
+		"sound_en" : "scene_014_en.mp3",
+		"sound_cn" : "scene_014.mp3",
+		"detlaX" : "634",
+		"detlaY" : "701"
+		
+	},	
+
+	{
+		"id" : 15,
+		"name_cn" : "南四楼一",
+		"name_en" : "The fourth South Tower Scene One",
+		"scname":"scene_015",
+		"longitude" : 116.00986629724503,
+		"latitude" : 40.351552288720306,
+		"sound_en" : "scene_015_en.mp3",
+		"sound_cn" : "scene_015.mp3",
+		"detlaX" : "601",
+		"detlaY" : "721"
+		
+	},	
+
+
+	{
+		"id" : 16,
+		"name_cn" : "南四楼二",
+		"name_en" : "The fourth South Tower Scene Two",
+		"scname":"scene_016",
+		"longitude" : 116.01002722978592,
+		"latitude" : 40.35162791942035,
+		"sound_en" : "scene_016_en.mp3",
+		"sound_cn" : "scene_016.mp3",
+		"detlaX" : "557",
+		"detlaY" : "728"
+		
+	},	
+
+	{
+		"id" : 17,
+		"name_cn" : "南四楼三",
+		"name_en" : "The fourth South Tower Scene Three",
+		"scname":"scene_017",
+		"longitude" : 116.01008892059326,
+		"latitude" : 40.35112916405011,
+		"sound_en" : "scene_017_en.mp3",
+		"sound_cn" : "scene_017.mp3",
+		"detlaX" : "604",
+		"detlaY" : "758"
+		
+	},	
+
+	{
+		"id" : 18,
+		"name_cn" : "南五楼一",
+		"name_en" : "The fifth South Tower Scene One",
+		"scname":"scene_018",
+		"longitude" : 116.01032227277756,
+		"latitude" : 40.35080415344269,
+		"sound_en" : "scene_018_en.mp3",
+		"sound_cn" : "scene_018.mp3",
+		"detlaX" : "613",
+		"detlaY" : "816"
+		
+	},	
+
+	{
+		"id" : 19,
+		"name_cn" : "南五楼二",
+		"name_en" : "The fifth South Tower Scene Two",
+		"scname":"scene_019",
+		"longitude" : 116.01030349731445,
+		"latitude" : 40.35012755400917,
+		"sound_en" : "scene_019_en.mp3",
+		"sound_cn" : "scene_019.mp3",
+		"detlaX" : "607",
+		"detlaY" : "850"
+		
+	},	
+
+	{
+		"id" : 20,
+		"name_cn" : "北二楼入口",
+		"name_en" : "The entrance to the second North Tower",
+		"scname":"scene_020",
+		"longitude" : 116.01351141929626,
+		"latitude" : 40.35574046653082,
+		"sound_en" : "scene_020_en.mp3",
+		"sound_cn" : "scene_020.mp3",
+		"detlaX" : "893",
+		"detlaY" : "450"
+		
+	},	
+
+	{
+		"id" : 21,
+		"name_cn" : "北二楼",
+		"name_en" : "The second North Tower",
+		"scname":"scene_021",
+		"longitude" : 116.01334780454636,
+		"latitude" : 40.356040926095154,
+		"sound_en" : "scene_021_en.mp3",
+		"sound_cn" : "scene_021.mp3",
+		"detlaX" : "921",
+		"detlaY" : "433"
+		
+	},	
+
+	{
+		"id" : 22,
+		"name_cn" : "北三楼出口",
+		"name_en" : "The EXIT of the third North Tower",
+		"scname":"scene_022",
+		"longitude" : 116.01491957902908,
+		"latitude" : 40.35652329375206,
+		"sound_en" : "scene_022_en.mp3",
+		"sound_cn" : "scene_022.mp3",
+		"detlaX" : "1036",
+		"detlaY" : "399"
+		
+	},	
+
+	{
+		"id" : 23,
+		"name_cn" : "北城墙一",
+		"name_en" : "North Wall Scene One",
+		"scname":"scene_023",
+		"longitude" : 116.01453334093094,
+		"latitude" : 40.35663162160727,
+		"sound_en" : "scene_023_en.mp3",
+		"sound_cn" : "scene_023.mp3",
+		"detlaX" : "1097",
+		"detlaY" : "379"
+		
+	},	
+
+	{
+		"id" : 24,
+		"name_cn" : "北城墙红叶一",
+		"name_en" : "Red Leaves at the North Wall Scene One",
+		"scname":"scene_024",
+		"longitude" : 116.01557403802872,
+		"latitude" : 40.35691981373315,
+		"sound_en" : "scene_024_en.mp3",
+		"sound_cn" : "scene_024.mp3",
+		"detlaX" : "1117",
+		"detlaY" : "368"
+		
+	},	
+
+	{
+		"id" : 25,
+		"name_cn" : "北四楼出口",
+		"name_en" : "The EXIT of the fourth North Tower",
+		"scname":"scene_025",
+		"longitude" : 116.01644843816757,
+		"latitude" : 40.35731428748296,
+		"sound_en" : "scene_025_en.mp3",
+		"sound_cn" : "scene_025.mp3",
+		"detlaX" : "1169",
+		"detlaY" : "311"
+		
+	},	
+
+	{
+		"id" : 26,
+		"name_cn" : "北城墙红叶二",
+		"name_en" : "Red Leaves at the North Wall Scene two",
+		"scname":"scene_026",
+		"longitude" : 116.01697951555252,
+		"latitude" : 40.3575084576521,
+		"sound_en" : "scene_026_en.mp3",
+		"sound_cn" : "scene_026.mp3",
+		"detlaX" : "1137",
+		"detlaY" : "355"
+		
+	},	
+
+	{
+		"id" : 27,
+		"name_cn" : "北五楼入口",
+		"name_en" : "The entrance to the fifth North Tower",
+		"scname":"scene_027",
+		"longitude" : 116.01824551820755,
+		"latitude" : 40.357847743131764,
+		"sound_en" : "scene_027_en.mp3",
+		"sound_cn" : "scene_027.mp3",
+		"detlaX" : "1179",
+		"detlaY" : "300"
+		
+	},	
+
+
+	{
+		"id" : 28,
+		"name_cn" : "北五楼",
+		"name_en" : "The fifth North Tower",
+		"scname":"scene_028",
+		"longitude" : 116.0189750790596,
+		"latitude" : 40.357733285570404,
+		"sound_en" : "scene_028_en.mp3",
+		"sound_cn" : "scene_028.mp3",
+		"detlaX" : "1170",
+		"detlaY" : "277"
+		
+	},	
+
+
+ {
+		"id" : 29,
+		"name_cn" : "红叶岭",
+		"name_en" : "The Maple Ridge",
+		"scname":"scene_029",
+		"longitude" : 116.02220177650452,
+		"latitude" : 40.34684053328603,
+		"sound_en" : "scene_029_en.mp3",
+		"sound_cn" : "scene_029.mp3",
+		"detlaX" : "1197",
+		"detlaY" : "836"
+		
+	},	
+
+ {
+		"id" : 30,
+		"name_cn" : "青龙桥火车隧道",
+		"name_en" : "Train Tunnel of Tsing Lung Bridge",
+		"scname":"scene_030",
+		"longitude" : 116.02366358041763,
+		"latitude" : 40.35002739218691,
+		"sound_en" : "scene_030_en.mp3",
+		"sound_cn" : "scene_030.mp3",
+		"detlaX" : "1375",
+		"detlaY" : "829"
+		
+	},		
+ {
+		"id" : 31,
+		"name_cn" : "詹天佑象",
+		"name_en" : "Zhan Tian You Statue",
+		"scname":"scene_031",
+		"longitude" : 116.02873831987381,
+		"latitude" : 40.351783268700295,
+		"sound_en" : "scene_031_en.mp3",
+		"sound_cn" : "scene_031.mp3",
+		"detlaX" : "1474",
+		"detlaY" : "730"
+		
+	},		
+ {
+		"id" : 32,
+		"name_cn" : "青龙桥火车站",
+		"name_en" : "Railway Station of Tsing Lung Bridge",
+		"scname":"scene_032",
+		"longitude" : 116.02757155895233,
+		"latitude" : 40.351497098696505,
+		"sound_en" : "scene_032_en.mp3",
+		"sound_cn" : "scene_032.mp3",
+		"detlaX" : "1615",
+		"detlaY" : "665"
+		
+	}
+]

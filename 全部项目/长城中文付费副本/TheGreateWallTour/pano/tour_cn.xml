@@ -1,0 +1,1438 @@
+<krpano version="1.16" title="3D 实景虚拟游" onstart="startup();">
+
+	<action name="choose_gyro">
+		switch(plugin[skin_gyro].enabled);
+	</action>
+	
+	<plugin name="skin_gyro" keep="true" url="gyro.js" devices="html5+!firefox" enabled="false" camroll="true" friction="0" velastic="0"  />
+    	
+    <events onnewpano="scenechanged" onloadcomplete="js(getcScene());"/>
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+	
+	<scene name="scene_001" title="步行街" onstart="" thumburl="thumb_001.jpg" lat="" lng="" heading="">
+
+		<view hlookat="15" vlookat="7" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_001.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_001.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_001.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_001.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_001.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_001.jpg" />
+			</tablet>
+		</image>
+
+		 <hotspot name="spot1"  
+				 url="changchengbowuguan.png"		
+                 scale="0.8"
+		         ath="-2" 
+		         atv="-3"
+		         zoom="false"
+
+                 onclick=" loadscene('scene_002',null,MERGE,ZOOMBLEND(1.5,10));"
+		         />
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_002" title="长城博物馆" onstart="" thumburl="thumb_002.jpg" lat="40.35690972" lng="116.00347528" heading="0.0">
+
+		<view hlookat="3.6" vlookat="-5" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_002.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_002.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_002.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_002.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_002.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_002.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="changchengquanzhouyingyuan.png"	
+				 scale="0.8"	
+		         ath="88" 
+		         atv="2"
+		         zoom="false"
+                 onclick=" loadscene('scene_003','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houbuxingjie.png"	
+				 scale="0.8"	
+		         ath="88" 
+		         atv="18"
+		         zoom="false"
+                 onclick=" loadscene('scene_001','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+				 
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_003" title="长城全周影院" onstart="" thumburl="thumb_003.jpg" lat="" lng="" heading="">
+
+		<view hlookat="90" vlookat="-15" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_003.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_003.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_003.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_003.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_003.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_003.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beimensuoyue.png"		
+				 scale="0.8"
+		         ath="-96" 
+		         atv="17"
+		         zoom="false"
+                 onclick=" loadscene('scene_004','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houchangchengbowuguan.png"
+				 scale="0.8"		
+		         ath="8.8" 
+		         atv="8.8"
+		         zoom="false"
+                 onclick=" loadscene('scene_002','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+				 
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_004" title="北门锁钥" onstart="" thumburl="thumb_004.jpg" lat="40.35434417" lng="116.00625167" heading="0.0">
+
+		<view hlookat="357" vlookat="-17" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_004.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_004.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_004.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_004.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_004.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_004.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="wangjingshi.png"	
+				 scale="0.8"	
+		         ath="-0.7" 
+		         atv="-5"
+		         zoom="false"
+                 onclick=" loadscene('scene_005','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="haohanbei.png"
+				 scale="0.8"		
+		         ath="-0.7" 
+		         atv="3"
+		         zoom="false"
+                 onclick=" loadscene('scene_006','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+				 				 	
+		  <hotspot name="spot3"  
+				 url="houchangchengquanzhouyingyuan.png"
+				 scale="0.8"		
+		         ath="177" 
+		         atv="13"
+		         zoom="false"
+                 onclick=" loadscene('scene_003','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+				 
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_005" title="望京石" onstart="" thumburl="thumb_005.jpg" lat="40.35414500" lng="116.00772167" heading="0.0">
+
+		<view hlookat="86.8" vlookat="20" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_005.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_005.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_005.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_005.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_005.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_005.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="hongyeling.png"
+				 scale="0.8"		
+		         ath="-10" 
+		         atv="7"
+		         zoom="false"
+                 onclick=" loadscene('scene_029','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houbeimensuoyue.png"	
+				 scale="0.8"	
+		         ath="153" 
+		         atv="4"
+		         zoom="false"
+                 onclick=" loadscene('scene_004','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+				 
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_006" title="好汉碑" onstart="" thumburl="thumb_006.jpg" lat="40.35385250" lng="116.00623750" heading="0.0">
+
+		<view hlookat="59" vlookat="-14" fovtype="MFOV" fov="111" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_006.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_006.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_006.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_006.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_006.jpg" />    
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_006.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanyilou.png"	
+				 scale="0.8"	
+		         ath="78" 
+		         atv="-7"
+		         zoom="false"
+                 onclick=" loadscene('scene_007','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="beierlourukou.png"
+				 scale="0.8"		
+		         ath="78" 
+		         atv="6"
+		         zoom="false"
+                 onclick=" loadscene('scene_020','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		  <hotspot name="spot3"  
+				 url="houbeimensuoyue.png"	
+				 scale="0.8"	
+		         ath="100" 
+		         atv="9"
+		         zoom="false"
+                 onclick=" loadscene('scene_004','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+				 
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_007" title="南一楼" onstart="" thumburl="thumb_007.jpg" lat="" lng="" heading="">
+
+		<view hlookat="181" vlookat="-2" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_007.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_007.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_007.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_007.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_007.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_007.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanerlouhongye.png"	
+				 scale="0.8"	
+		         ath="157" 
+		         atv="17"
+		         zoom="false"
+                 onclick=" loadscene('scene_008','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houhaohanbei.png"	
+				 scale="0.8"	
+		         ath="2" 
+		         atv="25"
+		         zoom="false"
+                 onclick=" loadscene('scene_006','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_008" title="南二楼红叶" onstart="" thumburl="thumb_008.jpg" lat="40.35316278" lng="116.00602806" heading="0.0">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_008.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_008.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_008.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_008.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_008.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_008.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanerlou.png"	
+				 scale="0.8"	
+		         ath="-90" 
+		         atv="6"
+		         zoom="false"
+                 onclick=" loadscene('scene_009','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanyilou.png"		
+				 scale="0.8"
+		         ath="95" 
+		         atv="20"
+		         zoom="false"
+                 onclick=" loadscene('scene_007','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_009" title="南二楼" onstart="" thumburl="thumb_009.jpg" lat="40.35335944" lng="116.00599833" heading="0.0">
+
+		<view hlookat="89" vlookat="-5" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_009.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_009.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_009.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_009.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_009.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_009.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nansanlou.png"
+				 scale="0.8"		
+		         ath="93" 
+		         atv="7"
+		         zoom="false"
+                 onclick=" loadscene('scene_010','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanerlouhongye.png"	
+				 scale="0.8"	
+		         ath="-90" 
+		         atv="10"
+		         zoom="false"
+                 onclick=" loadscene('scene_008','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_010" title="南三楼" onstart="" thumburl="thumb_010.jpg" lat="40.35229556" lng="116.00621111" heading="0.0">
+
+		<view hlookat="196" vlookat="-8" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_010.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_010.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_010.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_010.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_010.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_010.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanchengqiangyi.png"	
+				 scale="0.8"	
+		         ath="-163" 
+		         atv="-8"
+		         zoom="false"
+                 onclick=" loadscene('scene_011','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanerlou.png"	
+				 scale="0.8"	
+		         ath="-18" 
+		         atv="32"
+		         zoom="false"
+                 onclick=" loadscene('scene_009','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_011" title="南城墙一" onstart="" thumburl="thumb_011.jpg" lat="40.35088583" lng="116.00563361" heading="0.0">
+
+		<view hlookat="-153" vlookat="-7" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_011.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_011.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_011.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_011.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_011.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_011.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanchengqianger.png"	
+				 scale="0.8"	
+		         ath="-155" 
+		         atv="10"
+		         zoom="false"
+                 onclick=" loadscene('scene_012','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounansanlou.png"	
+				 scale="0.8"	
+		         ath="-14" 
+		         atv="22"
+		         zoom="false"
+                 onclick=" loadscene('scene_010','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_012" title="南城墙二" onstart="" thumburl="thumb_012.jpg" lat="40.35085500" lng="116.00533083" heading="0.0">
+
+		<view hlookat="-179.4" vlookat="-16.7" fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_012.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_012.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_012.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_012.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_012.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_012.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanchengqiangsan.png"	
+				 scale="0.8"	
+		         ath="-173" 
+		         atv="-10"
+		         zoom="false"
+                 onclick=" loadscene('scene_013','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanchengqiangyi.png"
+				 scale="0.8"		
+		         ath="-7" 
+		         atv="23"
+		         zoom="false"
+                 onclick=" loadscene('scene_011','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_013" title="南城墙三" onstart="" thumburl="thumb_013.jpg" lat="40.35088250" lng="116.00415667" heading="0.0">
+
+		<view hlookat="193" vlookat="6" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_013.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_013.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_013.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_013.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_013.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_013.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanchengqiangsi.png"	
+				 scale="0.8"	
+		         ath="-175" 
+		         atv="11"
+		         zoom="false"
+                 onclick=" loadscene('scene_014','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanchengqianger.png"	
+				 scale="0.8"	
+		         ath="-8" 
+		         atv="27"
+		         zoom="false"
+                 onclick=" loadscene('scene_012','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_014" title="南城墙四" onstart="" thumburl="thumb_014.jpg" lat="40.35089611" lng="116.00376000" heading="0.0">
+
+		<view hlookat="-197" vlookat="2" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_014.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_014.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_014.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_014.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_014.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_014.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nansilouyi.png"		
+				 scale="0.8"
+		         ath="165" 
+		         atv="-2.7"
+		         zoom="false"
+                 onclick=" loadscene('scene_015','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanchengqiangsan.png"
+				 scale="0.8"		
+		         ath="-17" 
+		         atv="26.6"
+		         zoom="false"
+                 onclick=" loadscene('scene_013','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_015" title="南四楼一" onstart="" thumburl="thumb_015.jpg" lat="40.35059611" lng="116.00323056" heading="0.0">
+
+		<view hlookat="289" vlookat="-14" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_015.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_015.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_015.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_015.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_015.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_015.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nansilouer.png"
+				 scale="0.8"		
+		         ath="-81" 
+		         atv="-7"
+		         zoom="false"
+                 onclick=" loadscene('scene_016','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounanchengqiangsi.png"
+				 scale="0.8"		
+		         ath="81" 
+		         atv="36"
+		         zoom="false"
+                 onclick=" loadscene('scene_014','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_016" title="南四楼二" onstart="" thumburl="thumb_016.jpg" lat="40.35016889" lng="116.00295944" heading="0.0">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_016.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_016.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_016.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_016.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_016.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_016.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nansilousan.png"	
+				 scale="0.8"	
+		         ath="87" 
+		         atv="19"
+		         zoom="false"
+                 onclick=" loadscene('scene_017','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounansilouyi.png"	
+				 scale="0.8"	
+		         ath="-92" 
+		         atv="8"
+		         zoom="false"
+                 onclick=" loadscene('scene_015','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_017" title="南四楼三" onstart="" thumburl="thumb_017.jpg" lat="40.34954250" lng="116.00315139" heading="0.0">
+
+		<view hlookat="188" vlookat="0.4" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_017.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_017.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_017.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_017.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_017.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_017.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanwulouyi.png"	
+				 scale="0.8"	
+		         ath="-167" 
+		         atv="7"
+		         zoom="false"
+                 onclick=" loadscene('scene_018','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounansilouer.png"	
+				 scale="0.8"	
+		         ath="1.5" 
+		         atv="15"
+		         zoom="false"
+                 onclick=" loadscene('scene_016','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_018" title="南五楼一" onstart="" thumburl="thumb_018.jpg" lat="40.34915056" lng="116.00314722" heading="0.0">
+
+		<view hlookat="178" vlookat="-2" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_018.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_018.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_018.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_018.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_018.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_018.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="nanwulouer.png"	
+				 scale="0.8"	
+		         ath="170" 
+		         atv="13.8"
+		         zoom="false"
+                 onclick=" loadscene('scene_019','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="hounansilousan.png"
+				 scale="0.8"		
+		         ath="1" 
+		         atv="16"
+		         zoom="false"
+                 onclick=" loadscene('scene_017','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_019" title="南五楼二" onstart="" thumburl="thumb_019.jpg" lat="40.34894833" lng="116.00329000" heading="0.0">
+
+		<view hlookat="-90" vlookat="19" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_019.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_019.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_019.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_019.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_019.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_019.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot2"  
+				 url="hounanwulouyi.png"
+				 scale="0.8"		
+		         ath="82" 
+		         atv="2"
+		         zoom="false"
+                 onclick=" loadscene('scene_018','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_020" title="北二楼入口" onstart="" thumburl="thumb_020.jpg" lat="40.35454583" lng="116.00648222" heading="0.0">
+
+		<view hlookat="191" vlookat="4" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_020.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_020.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_020.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_020.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_020.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_020.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beierlou.png"		
+				 scale="0.8"
+		         ath="175" 
+		         atv="-3"
+		         zoom="false"
+                 onclick=" loadscene('scene_021','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houhaohanbei.png"		
+				 scale="0.8"
+		         ath="12" 
+		         atv="24"
+		         zoom="false"
+                 onclick=" loadscene('scene_006','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_021" title="北二楼" onstart="" thumburl="thumb_021.jpg" lat="40.35485917" lng="116.00683167" heading="0.0">
+
+		<view hlookat="-63" vlookat="8" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_021.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_021.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_021.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_021.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_021.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beisanlouchukou.png"		
+				 scale="0.8"
+		         ath="-79" 
+		         atv="7"
+		         zoom="false"
+                 onclick=" loadscene('scene_022','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeierlourukou.png"	
+				 scale="0.8"	
+		         ath="77" 
+		         atv="18.3"
+		         zoom="false"
+                 onclick=" loadscene('scene_020','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_022" title="北三楼出口" onstart="" thumburl="thumb_022.jpg" lat="40.35537667" lng="116.00808667" heading="0.0">
+
+		<view hlookat="107" vlookat="4" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_022.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_022.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_022.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_022.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_022.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_022.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beichengqiangyi.png"	
+				 scale="0.8"	
+		         ath="119" 
+		         atv="-2"
+		         zoom="false"
+                 onclick=" loadscene('scene_023','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeierlourukou.png"	
+				 scale="0.8"	
+		         ath="-67" 
+		         atv="24"
+		         zoom="false"
+                 onclick=" loadscene('scene_021','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_023" title="北城墙一" onstart="" thumburl="thumb_023.jpg" lat="40.35544556" lng="116.00842000" heading="0.0">
+
+		<view hlookat="177" vlookat="1" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_023.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_023.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_023.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_023.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_023.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_023.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beichengqianghongyeyi.png"	
+				 scale="0.8"	
+		         ath="178" 
+		         atv="2"
+		         zoom="false"
+                 onclick=" loadscene('scene_024','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeisanlouchukou.png"		
+				 scale="0.8"
+		         ath="15" 
+		         atv="15"
+		         zoom="false"
+                 onclick=" loadscene('scene_022','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_024" title="北城墙红叶一" onstart="" thumburl="thumb_024.jpg" lat="40.35540000" lng="116.00837500" heading="0.0">
+
+		<view hlookat="290" vlookat="5" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_024.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_024.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_024.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_024.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_024.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_024.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beisilouchukou.png"	
+				 scale="0.8"	
+		         ath="178" 
+		         atv="6"
+		         zoom="false"
+                 onclick=" loadscene('scene_025','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeichengqiangyi.png"	
+				 scale="0.8"	
+		         ath="15" 
+		         atv="15"
+		         zoom="false"
+                 onclick=" loadscene('scene_023','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_025" title="北四楼出口" onstart="" thumburl="thumb_025.jpg" lat="40.35589250" lng="116.00948111" heading="0.0">
+
+		<view hlookat="-10" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_025.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_025.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_025.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_025.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_025.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_025.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beichengqianghongyeer.png"	
+				 scale="0.8"	
+		         ath="-14" 
+		         atv="13"
+		         zoom="false"
+                 onclick=" loadscene('scene_026','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeichengqianghongyeyi.png"		
+				 scale="0.8"
+		         ath="-167" 
+		         atv="18"
+		         zoom="false"
+                 onclick=" loadscene('scene_024','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_026" title="北城墙红叶二" onstart="" thumburl="thumb_026.jpg" lat="" lng="" heading="">
+
+		<view hlookat="197" vlookat="2" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_026.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_026.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_026.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_026.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_026.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_026.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beiwulourukou.png"		
+				 scale="0.8"
+		         ath="-99" 
+		         atv="8"
+		         zoom="false"
+                 onclick=" loadscene('scene_027','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeisilouchukou.png"	
+				 scale="0.8"	
+		         ath="88" 
+		         atv="8"
+		         zoom="false"
+                 onclick=" loadscene('scene_025','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_027" title="北五楼入口" onstart="" thumburl="thumb_027.jpg" lat="" lng="" heading="">
+
+		<view hlookat="173" vlookat="-8" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_027.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_027.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_027.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_027.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_027.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_027.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="beiwulou.png"		
+				 scale="0.8"
+		         ath="-171" 
+		         atv="-6"
+		         zoom="false"
+                 onclick=" loadscene('scene_028','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 
+		  <hotspot name="spot2"  
+				 url="houbeichengqianghongyeer.png"		
+				 scale="0.8"
+		         ath="7.4" 
+		         atv="22"
+		         zoom="false"
+                 onclick=" loadscene('scene_026','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_028" title="北五楼" onstart="" thumburl="thumb_028.jpg" lat="" lng="" heading="">
+
+		<view hlookat="314" vlookat="-24" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_028.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_028.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_028.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_028.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_028.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_028.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot2"  
+				 url="houbeiwulourukou.png"		
+				 scale="0.8"
+		         ath="-159" 
+		         atv="37"
+		         zoom="false"
+                 onclick=" loadscene('scene_027','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_029" title="红叶岭" onstart="" thumburl="thumb_029.jpg" lat="" lng="" heading="">
+
+		<view hlookat="194" vlookat="-7" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_029.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_029.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_029.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_029.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_029.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_029.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="qinglongqiaohuochesuidao.png"		
+				 scale="0.8"
+		         ath="-64" 
+		         atv="4"
+		         zoom="false"
+                 onclick=" loadscene('scene_030','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houwangjingshi.png"		
+				 scale="0.8"
+		         ath="92" 
+		         atv="8"
+		         zoom="false"
+                 onclick=" loadscene('scene_005','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_030" title="青龙桥火车隧道" onstart="" thumburl="thumb_030.jpg" lat="" lng="" heading="">
+
+		<view hlookat="136" vlookat="26" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_030.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_030.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_030.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_030.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_030.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_030.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="zhantianyouxiang.png"		
+				 scale="0.8"
+		         ath="78" 
+		         atv="5"
+		         zoom="false"
+                 onclick=" loadscene('scene_031','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houhongyeling.png"	
+				 scale="0.8"	
+		         ath="241" 
+		         atv="10"
+		         zoom="false"
+                 onclick=" loadscene('scene_029','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_031" title="詹天佑象" onstart="" thumburl="thumb_031.jpg" lat="" lng="" heading="">
+
+		<view hlookat="172" vlookat="-18" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_031.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_031.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_031.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_031.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_031.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_031.jpg" />
+			</tablet>
+		</image>
+		  <hotspot name="spot1"  
+				 url="qinglongqiaohuochezhan.png"	
+				 scale="0.8"	
+		         ath="-70" 
+		         atv="5"
+		         zoom="false"
+                 onclick=" loadscene('scene_032','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />	
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houqinglongqiaohuochesuidao.png"		
+				 scale="0.8"
+		         ath="41" 
+		         atv="5.6"
+		         zoom="false"
+                 onclick=" loadscene('scene_030','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_032" title="青龙桥火车站" onstart="" thumburl="thumb_032.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-130" vlookat="-16" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="preview_032.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2546" tiledimageheight="2546">
+				<cube url="l3_%s_%v_%h_032.jpg" />
+			</level>
+			<level tiledimagewidth="1273" tiledimageheight="1273">
+				<cube url="l2_%s_%v_%h_032.jpg" />
+			</level>
+			<level tiledimagewidth="637" tiledimageheight="637">
+				<cube url="l1_%s_%v_%h_032.jpg" />
+			</level>
+			<mobile>
+				<cube url="mobile_%s_032.jpg" />
+			</mobile>
+            <tablet>
+				<cube url="mobile_%s_032.jpg" />
+			</tablet>
+		</image>
+				 				 	
+		  <hotspot name="spot2"  
+				 url="houzhantianyouxiang.png"		
+				 scale="0.8"
+		         ath="160" 
+		         atv="18"
+		         zoom="false"
+                 onclick=" loadscene('scene_031','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />		
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+
+</krpano>

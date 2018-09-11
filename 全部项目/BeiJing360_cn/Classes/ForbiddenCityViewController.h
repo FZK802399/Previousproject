@@ -1,0 +1,27 @@
+//
+//  ForbiddenCityDownloadViewViewController.h
+//  BeiJing360
+//
+//  Created by Duke Douglas on 13-3-21.
+//  Copyright (c) 2013年 __ChuangYiFengTong__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "ASIHTTPRequest/ASIHTTPRequest.h"
+#import "ZipArchive.h"
+
+#define kFORBIDDEN_CITY_DOWNLOAD_URL @"http://demo.720a.com/gugong_iphone.zip"
+
+@interface ForbiddenCityViewController : UIViewController<ASIProgressDelegate, ASIHTTPRequestDelegate,UIScrollViewDelegate,UIAlertViewDelegate>
+{
+    NSString *_downloadUrl;
+    
+    UIWebView *_showWebView;
+    
+    BOOL _isDownloaded;
+    
+}
+
+
+
+@end

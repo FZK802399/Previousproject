@@ -1,0 +1,129 @@
+[
+
+	{
+		"id" : 1,
+		"title" : "Corner Tower",
+        "title_cn" : "故宫角楼",
+        "info_cn" : "角楼，紫禁城城垣四角的楼阁式建筑。建成于1420年，即明永乐十八年。角楼建筑结构的精巧程度和艺术价值堪称紫禁城之最。作为为数不多的四面凸字形平面组合的多角建筑，角楼的建造者将中国传统的木斗拱形式和木架形式发挥到了极致。角楼共有三层屋顶，最上层为纵横搭交的欧山顶，共有九梁十八柱七十二条脊。其玲珑精巧，繁复大气的造型深得人心。同时，角楼的营造巧妙地运用了阳极数字“九”。关键构件的数目都是“九”或是九的倍数，是古代中国建筑艺术与皇权思想的完美结合。",
+		"info" : "Corner Towers are the structure standing at every corner of the city wall surrounding the Forbidden City. It was constructed in 1420, the 18th Year of Ming Emperor Yongle’s Reign, with the reputation of most exquisite and most-valuable architecture in the Forbidden City. Rare in China, this type of multi-cornered complex building has embodied Chinese traditional architectural craftsmanship on wooden structure to the peak. There are three layers of the roof with 9 beams, 18 pillars and 72 ridges. Delicate composition and sophisticated pattern of the Corner Tower makes it the most admired structure in the Forbidden City and the most favored object of photographers. Meanwhile, the magical number 9 was adapted in the pattern of the Corner Tower. All numbers of key components is nine or multiples of nine. It combines the ancient Chinese architectural are with imperial ideology perfectly. "
+	},
+	{
+		"id" : 2,
+		"title" : "The Meridian Gate",
+        "title_cn" : "午门城楼",
+        "info_cn" : "威严肃穆的午门，是紫禁城的正门，位于紫禁城南北轴线南端，位当子午，故名午门。午门的平面呈“凹”字形，沿袭唐宋朝宫殿的形制，最早可追溯到汉代的门阙形制。午门分上下两部分，下为墩台，高12m，正中开三门，两侧各有一座掖门，俗称“明三暗五”。\n\n午门的五个门洞各有用途：中门为皇帝专用，此外只有皇帝大婚时，皇后乘坐的喜轿可以从中门进宫，又通过殿试选拔的状元、榜眼、探花，在宣布殿试结果后可从中门出宫。东侧门供文武官员出入。西侧门供宗室王公出入。两掖门只在举行大型活动时开启。墩台上正中门楼一座，面阔9间（60.05m），进深5间（25m），屋顶为重檐庑殿顶。正楼两侧各设钟鼓亭三间，每遇皇帝到太庙祭祀击鼓，大型活动钟鼓齐鸣。\n\n午门是颁发皇帝诏书的地方，成为金凤衔诏。敬献战俘的“献俘礼”也在午门举行。每逢重大典礼及重要节日，都要在这里陈设体现皇帝威严的仪仗。明代皇帝处罚大臣的廷杖也在午门举行。影视作品中屡见的“推出午门斩首”是不确实的。明代斩首在大街上，清代在菜市口。",
+		"info" : "As the main entrance of the Forbidden City, the majestic Meridian Gate lies at the southern end of the central axis, where is the position of Meridian according to Chinese Feng-Shui, hence the name. Pattern of the Meridian Gate is in the shape of U. This layout can date back to Han Dynasty (260B.C.-220A.D.). The Meridian Gate is actually a grand tower with five pavilions standing on a 12m-high terrace. Three gates set in the middle of the tower with different functions. The middle gate was exclusively used by the emperor, and the empress only on the wedding day. The eastern gate was for officials while the western gate for the imperial family. The central grand hall on the terrace is nine bays wide (60m) and five bays deep (25m) with double-eaved hipped roof. Side halls were drum and bell towers for the use of ceremonies like ancestral worship and other grand events. \n\nThe Meridian Gate was where the imperial edict was announced publically. Other important events were also held on the square before the Gate, for example, Prisoners Offering, etc. "
+	},
+	{
+		"id" : 3,
+		"title" : "Inner Golden Water Bridge",
+        "title_cn" : "内金水桥",
+        "info_cn" : "内金水桥，位于今故宫内太和门前广场的内金水河上，为五座并列单孔拱券式汉白玉石桥。共有单孔拱券式石桥5座。在方正庄严的太和门建筑群内，蜿蜒秀美的金水河与金水桥营造出灵动柔美的韵律，引人入胜。内金水桥是紫禁城内最大、最壮观的一组石桥。其规格制式与外金水桥相同。正中的一座是御路桥。桥长23.15米，宽6米。汉白玉望柱上雕刻蟠龙祥云，供皇帝专用。御路桥东西两侧为王公桥，长21米，宽5.4米，供皇室成员，亲王大臣通行。再两侧为品级桥，长19.5米，宽4.8米，供三品以上官员行走。",
+		"info" : "Siting above the Inner Golden Water River before the square of the Gate of Supreme Harmony, the Inner Golden Water Bridge is a set of five marble stone bridges with single arch opening below. Within the solemn compound of the Gate of Supreme Harmony, the winding Golden Water River with the Bridges adds a flexible and graceful atmosphere. The Bridge is the largest and most magnificent bridge-form architecture in the Forbidden City. Compared with the External Golden Water Bridge located before the Tian’anmen Tower, the pattern of the Inner Golden Water Bridge is strictly the same. Imperial Way Bridge is the name of the middle one with a length of 23 meters and width 6 meters. Bridges on both sides were for dukes and imperial families with length of 21 meters and width 5.4 meters. The officials were permit to walk along the farthest bridges with length of 19 meters and 4.8 meters width. "
+	},
+	{
+		"id" : 4,
+		"title" : "Bronze Lions before the Gate of Supreme Harmony",
+        "title_cn" : "太和门前铜狮",
+        "info_cn" : "明清两代在故宫陈设铜狮，用以显示封建君主的尊贵和威严。故宫共有铜狮六对。在中路的太和门和乾清门前各一对，在西六宫的养心门前一对，长春宫前一对，在外东路的宁寿门和养性门前各有一对。其中，以太和门前的一对最大，而且造型精美，装饰华丽，与庄重威仪的太和门前协调相称，这对铜狮没有鎏金，且无款式。据其造型及铸制方面推测，应为明代铸造。狮分雄雌，右侧与幼狮嬉戏的为雌狮，左侧抱球的为雄狮。",
+		"info" : "Bronze Lions were set in the Forbidden City during the Ming and Qing Dynasties, in order to display the majesty and dignity of imperial rulers. There are totally 6 pairs of bronze lions in the Forbidden City currently located before the Gate of Supreme Harmony and the Gate of Heavenly Purity, the Gate of Mental Cultivation, the Palace of Everlasting Spring, the Gate of Peaceful Longevity and the Gate of Character Cultivation. The pair before the Gate of Supreme Harmony is the largest one with most exquisite pattern and magnificent decorations. This pair of bronze lion has nor gold gilding neither seal. It was estimated they were cast during Ming Dynasty based on the form and the way of casting. The right-side lion is female playing games with a cub lion, while the left-side lion is male with a globe under his claw representing the world under his rule. "
+	},
+	{
+		"id" : 5,
+		"title" : "Mythical Ridge Animals at the Hall of Supreme Harmony",
+        "title_cn" : "太和殿垂脊兽",
+        "info_cn" : "故宫各个宫殿的垂脊和岔脊上，装饰有各种仙人走兽，兼具实际功用和象征意义。数量越多，对应的建筑等级越高。根据《大清会典》的记载，这些琉璃釉面小兽的排列顺序为：龙、凤、狮子、天马、海马、狻猊、押鱼、獬豸、斗牛、行什。如若数目达不到9个时，则依先后顺序。太和殿为等级最高的古建筑，角脊之上排列着10个小兽，其顺序为：“一龙二凤三狮子，海马天马六押鱼，狻猊獬豸九斗牛，最后行什像个猴”，象征着皇权的至高无上。\n\n太和殿比其它宫殿多出来的那个走兽叫“行什”，位于所有走兽的最上端。行什的造型像一只猴子，背生双翼，手持金刚杵，有降魔的功效。因为它的形象很像传说中的雷震子，所以放在屋顶，也有防雷的功效。垂脊兽构件内有铁钉，可以防止垂脊上的瓦件下滑，加固屋脊相交位置的结合部。歇山顶、悬山顶、硬山顶上都有垂兽。垂兽多用琉璃瓦制成，双角，中间掏空用来定入垂兽桩。",
+		"info" : "There are certain types of fairy figures and animals standing on the ridges above all palaces of the Forbidden City with both decoration meanings and actual functions. The number of the animals could tell the grade of the building. On the Hall of Supreme Harmony, 10-animals pattern was adopted. This marks the highest grade and it is the only case in China. According to the Grand Qing Dynasty Archive, names of these ten animals are Dragon, Phoenix, Lion, Heaven Horse, Sea Horse, Suan Ni, Ya Yu, Xie Zhi, Dou Niu, Hang Shi. Inside the animals are hidden iron nails functioning as fixing the tile from sliding down. Material of the animals is usually glaze. "
+	},
+	{
+		"id" : 6,
+		"title" : "The Hall of Supreme Harmony",
+        "title_cn" : "太和殿",
+        "info_cn" : "在太和殿广阔的台基上，围有奢华的汉白玉石雕栏杆。在栏杆扶手上，随处可见舒展优雅的祥云图案，北京奥运会的祥云火炬，就是取材自传统设计样式中的祥云。大殿汉白玉台基上，有数不清的龙头，这种没有角的龙，叫做螭。远眺,这些螭首只起装饰作用,近看,他们其实是故宫排水系统的第一个环节。太和殿的龙风云纹望柱下,有排水螭首1142只。下雨时1142只螭首会形成“大雨如练,小雨如柱,千龙吐水”的奇观。这些建设于六百年前的故宫排水系统，对于让现代北京城汗颜的大暴雨，仍然表示很淡定。",
+		"info" : "Luxurious marble stone handrails with sophisticated relief can been seen and touched on the grand terrace of the Hall of Supreme Harmony. Patterns carved on the handrail are usually flying clouds, from which, the symbol of 2008 Beijing Olympic was inspired. Dragon heads known as Chi could be seen on every layer of the high terrace below the handrails. They seem like decoration while actually work as part of the water drainage system. \n\nThere are 1142 dragon heads in the terrace of the Hall of Supreme Harmony. Magnificent scene know as Water from Thousand Dragons can be seen when it rains. This water drainage system was established 600 years ago. It still works well today. "
+	},
+	{
+		"id" : 7,
+		"title" : "The Hall of Supreme Harmony",
+        "title_cn" : "金銮殿",
+        "info_cn" : "太和殿俗称金銮殿，是故宫等级最高的主体建筑。该殿曾是明清两代北京城内最高、开间最多、进深最大和屋顶最高的建筑。其主要功能是举行皇帝登基、册立皇后等重大仪式。它是皇权至高无上的象征。太和殿建成于永乐十八年（1420年），原名奉天殿，长95米，宽48米，面积4522平方米。\n\n殿内正中设九龙楠木宝座。宝座设在宽1.67米、深0.67米的须弥座底座之上，正面和左右有7层台阶。宝座后面有雕龙金漆屏风。四周有象、鹤、香炉等摆设。宝座上悬挂有乾隆帝御笔“建极绥猷”匾。太和殿内外地面铺砌金砖，每块边长约为0.67米，共4718块。太和殿前丹陛上，摆放铜制龟、鹤各一对，里面中空，有重大典礼时用作燃放檀香。此外还有计时用的日晷、象征性的衡量仪器嘉量、香炉等。\n\n太和、中和与保和三大殿所在的台基上，设置有龙的头部形状的排水口。下雨时，排水头一起喷水，形成“千龙吐水”的景观。每逢重大庆典或仪式，如皇帝即位、皇帝大婚、册立皇后、派大将出征远方等事件，皇帝都会在太和殿接受群臣祝贺，这样的仪式叫“朝会”。朝会会用到大量的陈设、乐器等的设备，规模极大。皇帝会在大殿上接受大臣的叩礼，有时还会在太和殿设宴款待群臣。",
+		"info" : "Better known as Jinluan Hall, the Hall of Supreme Harmony is the main structure with highest level in the Forbidden City. This Hall was the highest building in the city of Beijing during Ming and Qing Dynasties with most bays, largest depth, and top-level roof. As the king of halls, the Hall was the place where most important ceremonies were held, for example, the enthronement of emperor and the appointment of empress. This symbol of supremacy of emperor was completed in 1420. It occupies an area of 4522 square meters with a length of 95 meters and width of 48 meters. \n\nAn original Nanmu throne with nine-dragon carving can be seen right in the middle of the Hall on a 1.67m-wide, 0.67m-deep terrace with seven steps. Surrounding the throne, there are elephant, crane and incense burners made of bronze. Above the throne is the banner inscribed with characters written by Emperor Qianlong. The floor of the Hall is covered by Gold Bricks, which were precious and expensive. They last for the past hundreds of years but are still solid and shining. Sun dial and Measures are placed outside the Hall representing the supreme standard and justice of the emperor. "
+	},
+	{
+		"id" : 8,
+		"title" : "The Dragon Throne",
+        "title_cn" : "龙椅",
+        "info_cn" : "皇帝的宝座叫髹金雕龙木椅，是象征至高无上的封建皇权的，样子与平常座椅不大一样：有一个“圈椅式”的椅背，四根支撑靠手的圆柱上蟠着金光灿灿的龙。底座不采用椅腿，椅撑，而是一个宽约2.5,进深一米多的“须弥座”。通体髹上黄金，显得富丽堂皇又气势威严。根据故宫博物院文物专家的考证，这座龙椅是明代制品，可能是嘉靖皇帝重建皇极殿时的遗物。\n\n1959年，故宫博物院专家在一张光绪二十六年的旧照片上，看到从前太和殿的陈设情况，就根据照片中的龙椅式样，四处查找，终于在一处存放旧家具的库房中，发现这座明代龙椅。因为龙椅长期被看作普通家具，随便弃置，弄得残缺不全。后来根据有关资料，请名匠高手修复，共用了934个工日才竣工。",
+		"info" : "Full name of the emperor’s throne is Wooden Throne with Carved Dragons and Glided Gold. It is more than a chair. It stood for the supremacy of the emperor in feudal times of China. Different with common chair, the dragon throne has a circular back and four supporting pillars carved with gold dragons. It stands on a terrace which is 2.5 meters wide and over 1 meter deep. Full surface of the throne is glided with pure gold. According to the estimation of the Palace Museum expert, this throne was made in Ming Dynasty (1368-1644). It might be the legacy of Ming Jiajing Emperor used in Imperial Supremacy Hall. It was retrieved in 1959 in a forgotten warehouse piled with old furniture. It took craftsmen 934 days to restore it into present conditions.  "
+	},
+	{
+		"id" : 9,
+		"title" : "Plaque “Jian Ji Sui You”",
+        "title_cn" : "建极绥猷",
+        "info_cn" : "太和殿正中的“建极绥猷(suí yóu)”匾，为乾隆御笔，在太和殿内，是故宫恢复“康乾盛世”风貌规划的维修时，故宫博物院专家依照清宫所存《清朝皇室写真》中1900年太和殿旧照片，历时一年，于2002年9月成功复制的。原物已经无法找到了。\n\n这四个字是说，天子要上体天道，下顺民意，用中正的法则治理国家。“极”是屋脊栋梁，建极就是要建立中正的治国方略。绥是顺应之意，猷为道，为法则。这块匾挂于太和殿中，正是说明了历代皇族的治国理想。站在这方匾下，天天仰视，自然有心怀天下的使命之感。",
+		"info" : "In the middle of the Hall of Supreme Harmony, right above the Dragon Throne, there is a plaque inscribed with four Chinese characters: Jian Ji Sui You, written by Emperor Qianlong. Actually the present plaque is a duplicate made in 2002 based on archive. The original one is long lost. \n\nJian-Ji-Sui-You is an motto reminding the emperor to be aware of the rule of the Heaven and respect the needs of the people. A fair rule should be adopted by the emperor to administrate the state. As a matter of fact, most of the ancient Chinese emperors can meet the requirements of this motto. "
+	},
+	{
+		"id" : 10,
+		"title" : "Bronze Tortoise",
+        "title_cn" : "铜龟",
+        "info_cn" : "太和殿前宽阔的平台上，在东西两侧分别设有一只铜龟。龟在中国文化中与龙、凤、麒麟合称为四灵，它又是长寿的象征，在神话传说中有时还会成为神仙的坐骑。铜龟背上有盖，可以掀开放入香料，举行大典礼时，从铜龟中就会冒出袅袅的香烟，以装点仪式的神秘与高贵。\n\n根据东阳《怀麓堂集》，龙生九子不成龙，各有所好，龙之九子之首，称为贔屃，又名霸下，形似龟，好负重。在各地的宫殿、祠堂、陵墓中均可见到。霸下和龟十分相似，但细看却有差异，霸下有一排牙齿，而龟类却没有，霸下和龟类在背甲上甲片的数目和形状也有差异。霸下又称石龟，是长寿和吉祥的象征。",
+		"info" : "On the broad platform of the Hall of Supreme Harmony, there stand two bronze tortoises on each side. In ancient Chinese culture, tortoise is regarded as one of the Four Spiritual Creatures (the other three are Dragon, Phoenix and Kylin). Meanwhile, it is the symbol of longevity. In ancient legends, tortoises are always the ride of immortals. Open the cover on the back of the tortoises, incenses could be placed inside the tortoises. During grand ceremonies in old days, incenses would be burned inside and creates smokes and a solemn atmosphere. \n\nAccording to Chinese legends, the Dragon has nine children, tortoise is one of them. His hobby is to carry very heavy things. That’s why tourists can always find the figure of tortoise in palaces, tombs and ancestral shrines carrying stone tablets on its back. "
+	},
+	{
+		"id" : 11,
+		"title" : "The Hall of Central Harmony",
+        "title_cn" : "中和殿",
+        "info_cn" : "中和殿是故宫外朝三大殿之二，位于太和殿、保和殿之间，是皇帝举行大典之前休息的地方。“中和”二字取自《礼记·中庸》：“中也者，天下之本也；和也者，天下之道也”之意。中和殿始建于明朝永乐十八年（1420年），高29米，平面呈方形，为单檐四角攒尖，屋面覆黄色琉璃瓦，中为铜胎鎏金宝顶。是三大殿中面积最小的。\n\n中和殿正中设有宝座，两旁陈列着两个肩舆。所谓的肩舆是皇帝乘坐的轿子中的一种，主要供皇帝在紫禁城内活动使用。明清两代，中和殿的使用功能基本上相同，即皇帝到太和殿参加大型庆典前在此休息准备。皇帝在中和殿通常都先接受主持庆典的官员朝拜和奏事，再到太和殿参与庆典。\n\n另外在每年春季的先农坛祭典时，皇帝都会先到中和殿阅读写有祭文的祝版，查看亲耕用的农具。在参与天坛、地坛、社稷坛、太庙的类似活动前，皇帝也会在这里阅读祭文。给皇太后上徽号时，皇帝也要到中和殿阅读拟好的奏折。有时候皇帝也会在这里召见官员或赐食。",
+		"info" : "Located between the Hall of Supreme Harmony and the Hall of Preserving Harmony, the Hall of Central Harmony is the second grand hall in the outer court of the Forbidden City. This is the place where the emperor prepared himself before ceremonies in the Hall of Supreme Harmony. Central Harmony comes from the Book of Rite meaning the emperor should take the golden mean and realize the harmony between the ruling and the ruled. It was originally built in 1420 with a height of 29 meters. This is a square hall with single-eaved paramedic roof covered with yellow glazed tiles. As the smallest-sized one of the Front Three Grand Halls in the Forbidden City, it has a throne in the middle of inside with two sedans on both side of the throne. They were used to carry the emperor from one site to another within the Forbidden City. Function of the Hall was to provide a place for the emperor to prepare himself before the grand ceremonies held in the Hall of Supreme Harmony. Sometimes the emperor met officials and heard reports here. "
+	},
+	{
+		"id" : 12,
+		"title" : "Rear View of the Hall of Supreme Harmony",
+        "title_cn" : "太和殿后视图",
+        "info_cn" : "太和殿俗称金銮殿，是故宫等级最高的主体建筑。该殿曾是明清两代北京城内最高、开间最多、进深最大和屋顶最高的建筑。其主要功能是举行皇帝登基、册立皇后等重大仪式。它是皇权至高无上的象征。太和殿建成于永乐十八年（1420年），原名奉天殿，长95米，宽48米，面积4522平方米。\n\n殿内正中设九龙楠木宝座。宝座设在宽1.67米、深0.67米的须弥座底座之上，正面和左右有7层台阶。宝座后面有雕龙金漆屏风。四周有象、鹤、香炉等摆设。宝座上悬挂有乾隆帝御笔“建极绥猷”匾。太和殿内外地面铺砌金砖，每块边长约为0.67米，共4718块。太和殿前丹陛上，摆放铜制龟、鹤各一对，里面中空，有重大典礼时用作燃放檀香。此外还有计时用的日晷、象征性的衡量仪器嘉量、香炉等。",
+		"info" : "Better known as Jinluan Hall, the Hall of Supreme Harmony is the main structure with highest level in the Forbidden City. This Hall was the highest building in the city of Beijing during Ming and Qing Dynasties with most bays, largest depth, and top-level roof. As the king of halls, the Hall was the place where most important ceremonies were held, for example, the enthronement of emperor and the appointment of empress. This symbol of supremacy of emperor was completed in 1420. It occupies an area of 4522 square meters with a length of 95 meters and width of 48 meters. \n\nAn original Nanmu throne with nine-dragon carving can be seen right in the middle of the Hall on a 1.67m-wide, 0.67m-deep terrace with seven steps. Surrounding the throne, there are elephant, crane and incense burners made of bronze. Above the throne is the banner inscribed with characters written by Emperor Qianlong. The floor of the Hall is covered by Gold Bricks, which were precious and expensive. They last for the past hundreds of years but are still solid and shining. Sun dial and Measures are placed outside the Hall representing the supreme standard and justice of the emperor. "
+	},
+	{
+		"id" : 13,
+		"title" : "Stone Carvings with Dragons and Clouds",
+        "title_cn" : "云龙石雕",
+        "info_cn" : "保和殿后阶陛中间有一块雕刻着云、龙、海水和山崖的御路石，人们称之为云龙石雕。此石雕原是明代石雕，清乾隆二十六年（1761年）凿去旧有的花纹重新雕造。石长1657米，宽307 米，厚17米，重二百多吨。石料采自房山，当时石料的采运非常困难，运输沿途每隔一里挖井一口，汲水泼成冰道，用旱船托运。一石采运即需万人之多。石雕四周刻有缠枝莲花纹，下部为海水江牙，中间雕刻着流云衬托着九条蟠龙和州龙，云龙形像生动，雕刻精细，一丝不苟，有着较高的艺术价值。",
+        "info" : "The largest stone carving of the Forbidden City is at the center of the ramp to the terrace of Three Front Halls on the north side, behind the Hall of Preserving Harmony. The carving, lying in the axis as part of the Imperial Way, is 16.57m long, 3.07m wide, 1.7m thick and over 200 tons heavy engraved with clouds and dragons. It was carved from a single piece of stone excavated from quarries of Fangshan, Beijing.\n\nThe other stone carving is located in the south-side ramp of the terrace leading to the Hall of Supreme Harmony. It has the same pattern of bas-relief but longer, made from two stone slabs joined together. The project cost 110,000 taels of silver and 20,000 civilian workers"
+	},
+	{
+		"id" : 14,
+		"title" : "The Palace of Heavenly Purity",
+        "title_cn" : "乾清宫",
+        "info_cn" : "明永乐十八年（1420年）建成，是明清时代不少皇帝居住、处理政务及停灵的地方。宫内正堂挂“正大光明”匾一幅，匾后是清朝中后期密储制度保存传位诏书的地方。乾清宫与坤宁宫分别为传统意义上的帝、后寝宫。乾、坤分别为《周易》中的卦名，乾表天，坤表地。《道德经》第三十九章：“天得一以清； 地得一以宁；” 是谓“乾清坤宁”。\n\n乾清宫是内廷正殿，面宽9间，进深5间，高20米，重檐庑殿顶。是明朝时期皇帝和皇后的寝宫。大殿东西两侧各有东、西暖阁。丹陛的东西两侧各有社稷江山殿一座，东为昭仁殿、西为弘德殿。\n\n大殿前的丹陛上陈列有龟、鹤、日晷、嘉量、宝鼎。殿前有宽阔的甬道，通向乾清门。乾清宫御座上方有一匾，称正大光明匾。匾上“正大光明”四字是最初是顺治皇帝手书，康熙帝和乾隆帝都曾临摹，目前的版本是乾隆临摹的。雍正帝因眼看其与兄弟们争夺太子宝座的事态，创立秘密立储制。建储匣被存放在正大光明匾后。匣内藏皇帝选定并御笔亲书的皇位继承人名字，皇帝死后，由王侯公卿公证，由匣子秘密指定的皇子即位。此制度到咸丰帝后，因咸丰只有一个儿子而无法执行。往后的同治帝和光绪帝也无子，故没执行此制度。",
+		"info" : "The Palace of Heavenly Purity was constructed in 1420 as the place for emperors to live and work. There is a plaque hung above the throne in the middle of the Palace inscribed with Zheng Da Guang Ming (literally Righteous and Open-minded). It was named according to the Chinese Feng-Shui. The Palace is the main architecture of the Inner Coute. It is 9 bays wide, 5 bays deep and 20 meters high with double-eaved hipped roof. On both sides of the Palace on its platform, there stand the Hall of Manifesting Benevolence in the east and the Hall of Expanding Virtue in the west. \n\nBronze tortoises, cranes, sun dials and precious vessels are placed on the platform of the Palace. A wide pathway leads from the Gate of the Heavenly Purity to the entrance of this Palace. The Zheng Da Guang Ming Plaque has the wide-spread story about the secret heir system of late Qing Dynasty: dying emperor wrote the name of his successor on a paper, put it into a box, sealed it and kept it behind this plaque. The next emperor will not be announced before the death of the old emperor. Three Qing Emperors were named in this way. "
+	},
+	{
+		"id" : 15,
+		"title" : "Inaction",
+        "title_cn" : "无为",
+        "info_cn" : "康熙一生罕有题字。有种说法，今天的北京城内，除公文外，康熙皇帝的真迹墨宝只保留下三个字：恭王府后花园秘云洞内的“福”字，和紫禁城交泰殿里这块匾上的“无为”二字。\n\n“无为”匾的右上方写着“圣祖御书”，而匾的左下方写着“乾隆六十二年丁巳御笔恭摹”。看来“无为”两字，是乾隆恭摹他圣祖的御书，而不是康熙的真迹。乾隆御制《交泰殿铭》中，乾隆的“无为”字迹，与乾隆摹写康熙的“无为”字迹有所不同。宝座后的板屏，上书乾隆帝御制《交泰殿铭》。",
+		"info" : "Handwritings of Emperor Kangxi (1654-1722) could seldom be found nowadays expected in the Princess Gong’s Mansion and the inscription on this plaque hung in the Hall of Central Harmony. Two Chinese characters: Wu Wei (literally Inaction) reflects the philosophy of the late emperor, who is regarded one of the greatest emperors throughout Chinese history. Emperor Kangxi believed in natural way of administration. This plaque was written by his grandson, Emperor Qianlong according to the original version. The latter was well known as another great emperor, too. "
+	},
+	{
+		"id" : 16,
+		"title" : "Nine Dragon Screen in the Forbidden City",
+        "title_cn" : "故宫九龙壁",
+        "info_cn" : "九龙壁位于紫禁城宁寿宫区皇极门外。壁长29.4m，高3.5m，厚0.45m，是一座背倚宫墙而建的单面琉璃影壁，为乾隆三十七年(1772年)改建宁寿宫时烧造。壁上部为黄琉璃瓦庑殿式顶，檐下为仿木结构的椽、檩、斗栱。壁面以云水为底纹，分饰蓝、绿两色，烘托出水天相连的磅礴气势。下部为汉白玉石须弥座，端庄凝重。壁上9龙以高浮雕手法制成，最高部位高出壁面20cm，形成很强的立体感。\n\n纵贯壁心的山崖奇石将9条蟠龙分隔于5个空间。黄色正龙居中，前爪作环抱状，后爪分撅海水，龙身环曲，将火焰宝珠托于头下，瞠目张颔，威风凛然。左右两侧各有蓝白两龙，白为升龙，蓝为降龙。左侧两龙龙首相向；右侧两龙背道而弛，四龙各逐火焰宝珠，神动形移，似欲破壁而出。外侧双龙，一黄一紫，左端黄龙挺胸缩颈，上爪分张左右，下肢前突后伸；紫龙左爪下按，右爪上抬，龙尾前甩。二龙动感十足，争夺之势活灵活现。右端黄龙弓身弩背，张驰有度，腾挪跳跃之体态刻划生动；紫龙昂首收腹，前爪击浪，风姿雄健。",
+		"info" : "The Nine Dragon Screen lies in front of the Gate of Imperial Supremacy. It’s 29 meters high, 3.5 meters high and 0.45 meter thick. In 1772, it was cast and constructed when the complex of Peaceful Longevity Palace was renovated. Hipped roof covered with yellow glazed tiles is the form of its roof. Nine dragons were inscribed onto the screen above background of water and clouds made of glazed tiles. \n\nThe Yellow Dragon sits in the middle with front claw holding a flaming pearl above. Blue and White Dragons fly on both sides of the Yellow, then there are Purple dragon and a smaller yellow dragon in different positions. This Screen is one of the greatest masterpieces of its type in China with unlimited cultural and historical values. "
+	},
+	{
+		"id" : 17,
+		"title" : "Gold Gilded Bronze Vats",
+        "title_cn" : "鎏金铜缸",
+        "info_cn" : "故宫的部分宫殿前摆放着各类金属缸，这些大缸宽腹收口、装饰精美、两耳处挂有兽面铜环。这些大缸的基本用途是防火，同时还是精美绝伦的陈列品。据《大清会典》记载，宫中共有大缸三百零八口，现存二百三十一口。\n\n在清代，内务府每天负责从井内汲水灌满所有大缸。从小雪节气开始，铜缸会套上特制的棉套，并加盖缸盖；同时铜缸下生火，防止缸内的存水结冰。保暖工作持续到第二年的惊蛰节气为止。始终保证宫中有足够的水源用于灭火。\n\n这些金属大缸分为铁、铜和鎏金铜三种。铁缸是明代铸造的；铜缸有明代的，也有清代的；鎏金铜缸则均为清代铸造。其中以铜缸居多，因此习惯地统称宫中的大缸为铜缸。",
+		"info" : "In front of some palaces and halls in the Forbidden City, there placed certain types of water vats. These giant vats have wide capacity and sophisticated decorations. Two copper rings set on both sides of the vats. Fundamental usage of the vat was fire-fighting. It’s also exquisite works of art. There used to be 308 vats in the Forbidden City, now 231 left. \n\nIn Qing Dynasty, the internal affair employees were in charge of the vats. In winters, the vats were covered by special coverings and fire set under them to keep the water in the vat from being frozen. There are usually three types of the vats: iron vat, bronze vat and bronze vats with gold gliding. All of them were cast in Ming and Qing Dynasties. Because most of the vats are made of bronze, they are called Bronze Vats altogether. "
+	},
+	{
+		"id" : 18,
+		"title" : "The Palace Museum",
+        "title_cn" : "故宫博物院",
+        "info_cn" : "北京故宫博物院（the Palace Museum），建成于民国14年10月10日，即公元1925年10月10日，是我国在明朝、清朝两代皇宫及其收藏的基础上建立起来的综合性博物馆，也是中国最大的古代文化艺术博物馆，其文物收藏主要来源于清代宫中旧藏。\n\n故宫博物院位于北京故宫即紫禁城内。北京故宫是第一批全国重点文物保护单位、第一批国家5A级旅游景区，1987年入选《世界文化遗产名录》。整个紫禁城宫殿建筑是中国现今保存最完整、规模最宏伟的古代宫殿建筑群。\n\n故宫博物院是国家一级博物馆，2012年单日最高客流量突破18万人次，全年客流量突破1500万人次，可以说是世界上接待游客最繁忙的博物馆。",
+		"info" : "The Palace Museum was founded Oct 10, 1925, when the Last Emperor (Emperor Puyi) was exiled by General Feng Yuxiang out of the Forbidden City. Based on the collection of former emperors, the government established this general Museum and the largest museum of ancient Chinese culture and arts in the world at the same time. \n\nThe museum itself is the Forbidden City. It was listed in the first batch of sites under state protection, 5A tourism attractions. Moreover, it was announced the World Heritage in 1987 by UNESCO. The complex of the Forbidden City is the most complete and magnificent ancient palatial architectures in the world. Daily reception of the Palace Museum is more than 180,000 in 2012, and 15 million per year. It is one of the busiest museums in the world.    "
+	}
+]

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="q3l-AQ-3Dw" customClass="RefundCell2">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q3l-AQ-3Dw" id="TgY-ib-VRD">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其它" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNw-4e-LDQ">
+                        <rect key="frame" x="15" y="0.0" width="30" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="MHt-os-cOQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-35-TLD">
+                        <rect key="frame" x="362" y="11" width="20" height="22"/>
+                        <state key="normal" image="checkbox_off">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="checkbox_on"/>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7m-1O-hRA">
+                        <rect key="frame" x="8" y="52" width="374" height="39"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-f6-ail">
+                        <rect key="frame" x="0.0" y="98" width="390" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mWF-R6-YHk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AWu-f6-ail" secondAttribute="trailing" id="6C7-fV-UP2"/>
+                    <constraint firstItem="GHb-35-TLD" firstAttribute="top" secondItem="TgY-ib-VRD" secondAttribute="top" constant="11" id="72k-tm-YHi"/>
+                    <constraint firstItem="lNw-4e-LDQ" firstAttribute="leading" secondItem="TgY-ib-VRD" secondAttribute="leading" constant="15" id="CnK-yS-dcr"/>
+                    <constraint firstAttribute="trailing" secondItem="d7m-1O-hRA" secondAttribute="trailing" constant="8" id="FDc-9o-AL3"/>
+                    <constraint firstAttribute="centerY" secondItem="GHb-35-TLD" secondAttribute="centerY" id="Hk2-xE-sMd"/>
+                    <constraint firstAttribute="bottom" secondItem="d7m-1O-hRA" secondAttribute="bottom" constant="8" id="PDV-nG-Mlc"/>
+                    <constraint firstAttribute="bottom" secondItem="lNw-4e-LDQ" secondAttribute="bottom" id="QRH-mS-vqx"/>
+                    <constraint firstItem="d7m-1O-hRA" firstAttribute="leading" secondItem="TgY-ib-VRD" secondAttribute="leading" constant="8" id="Rae-LY-WIr"/>
+                    <constraint firstAttribute="trailing" secondItem="GHb-35-TLD" secondAttribute="trailing" constant="8" id="eTX-uv-MOE"/>
+                    <constraint firstItem="d7m-1O-hRA" firstAttribute="top" secondItem="lNw-4e-LDQ" secondAttribute="bottom" constant="8" id="msw-XK-yrA"/>
+                    <constraint firstAttribute="bottom" secondItem="AWu-f6-ail" secondAttribute="bottom" id="nad-N1-9H2"/>
+                    <constraint firstItem="lNw-4e-LDQ" firstAttribute="baseline" secondItem="GHb-35-TLD" secondAttribute="baseline" id="p3c-xe-Mt7"/>
+                    <constraint firstItem="lNw-4e-LDQ" firstAttribute="top" secondItem="TgY-ib-VRD" secondAttribute="top" id="tb2-Sv-QOo"/>
+                    <constraint firstItem="AWu-f6-ail" firstAttribute="leading" secondItem="TgY-ib-VRD" secondAttribute="leading" id="uOe-p7-E4t"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="QRH-mS-vqx"/>
+                        <exclude reference="p3c-xe-Mt7"/>
+                        <exclude reference="Hk2-xE-sMd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="GHb-35-TLD" id="W3N-NU-lFM"/>
+                <outlet property="textView" destination="d7m-1O-hRA" id="WIr-LK-Pt5"/>
+            </connections>
+            <point key="canvasLocation" x="443" y="281"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_off" width="20" height="20"/>
+        <image name="checkbox_on" width="20" height="20"/>
+    </resources>
+</document>

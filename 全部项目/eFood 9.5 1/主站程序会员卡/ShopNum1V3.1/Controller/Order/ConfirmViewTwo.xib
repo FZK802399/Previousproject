@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fKJ-Da-Zzh" customClass="ConfirmViewTwo">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PT-3s-xaA" userLabel="line1">
+                    <rect key="frame" x="8" y="45" width="369" height="1"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="KO8-SW-4tq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZN-hW-yG6">
+                    <rect key="frame" x="8" y="8" width="32" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msd-pj-GO8">
+                    <rect key="frame" x="0.0" y="46" width="385" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择支付方式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-y8-fPn">
+                            <rect key="frame" x="8" y="32" width="96" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ea0-y8-fPn" firstAttribute="leading" secondItem="msd-pj-GO8" secondAttribute="leading" constant="8" id="Q6s-Wl-18I"/>
+                        <constraint firstAttribute="height" constant="60" id="Q7U-sz-QLY"/>
+                        <constraint firstAttribute="bottom" secondItem="ea0-y8-fPn" secondAttribute="bottom" constant="8" id="n6O-RR-4k4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="约¥120.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-No-hby">
+                    <rect key="frame" x="327" y="22" width="50" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="FC9-a3-xbw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="FC9-a3-xbw"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btz-8D-f6T">
+                    <rect key="frame" x="340" y="5" width="37" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="CIU-IJ-mqe"/>
+                        <constraint firstAttribute="height" constant="15" id="XD1-N3-dIb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.1764705882" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CIU-IJ-mqe"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1PT-3s-xaA" firstAttribute="top" secondItem="Btz-8D-f6T" secondAttribute="bottom" constant="8" id="7lf-b9-utS"/>
+                <constraint firstItem="1PT-3s-xaA" firstAttribute="top" secondItem="fKJ-Da-Zzh" secondAttribute="top" constant="45" id="8L2-10-i08"/>
+                <constraint firstItem="1PT-3s-xaA" firstAttribute="leading" secondItem="fKJ-Da-Zzh" secondAttribute="leading" constant="8" id="ANp-OB-Ga0"/>
+                <constraint firstItem="Lfk-No-hby" firstAttribute="top" secondItem="Btz-8D-f6T" secondAttribute="bottom" constant="2" id="Cdv-uj-8E6"/>
+                <constraint firstAttribute="trailing" secondItem="Btz-8D-f6T" secondAttribute="trailing" constant="8" id="Lzp-2X-sef"/>
+                <constraint firstAttribute="trailing" secondItem="Btz-8D-f6T" secondAttribute="trailing" constant="8" id="MEN-zG-mhJ"/>
+                <constraint firstAttribute="trailing" secondItem="1PT-3s-xaA" secondAttribute="trailing" constant="8" id="O2e-DU-7ja"/>
+                <constraint firstItem="Btz-8D-f6T" firstAttribute="top" secondItem="fKJ-Da-Zzh" secondAttribute="top" constant="5" id="Rpp-tb-Oph"/>
+                <constraint firstAttribute="trailing" secondItem="Lfk-No-hby" secondAttribute="trailing" constant="8" id="U1e-5w-I9a"/>
+                <constraint firstAttribute="bottom" secondItem="msd-pj-GO8" secondAttribute="bottom" id="UYQ-FW-uHZ"/>
+                <constraint firstItem="msd-pj-GO8" firstAttribute="top" secondItem="1PT-3s-xaA" secondAttribute="bottom" id="VKd-Ua-V0H"/>
+                <constraint firstAttribute="trailing" secondItem="msd-pj-GO8" secondAttribute="trailing" id="Vsu-Sr-QCi"/>
+                <constraint firstItem="OZN-hW-yG6" firstAttribute="top" secondItem="fKJ-Da-Zzh" secondAttribute="top" constant="8" id="abY-4H-feU"/>
+                <constraint firstItem="Lfk-No-hby" firstAttribute="leading" secondItem="Btz-8D-f6T" secondAttribute="trailing" constant="10" id="eID-OJ-JTh"/>
+                <constraint firstItem="Lfk-No-hby" firstAttribute="top" secondItem="fKJ-Da-Zzh" secondAttribute="top" constant="9" id="ieO-OH-uXL"/>
+                <constraint firstItem="msd-pj-GO8" firstAttribute="top" secondItem="Lfk-No-hby" secondAttribute="bottom" id="l4j-qI-9QL"/>
+                <constraint firstItem="msd-pj-GO8" firstAttribute="leading" secondItem="fKJ-Da-Zzh" secondAttribute="leading" id="m4c-Tv-nB1"/>
+                <constraint firstItem="OZN-hW-yG6" firstAttribute="leading" secondItem="fKJ-Da-Zzh" secondAttribute="leading" constant="8" id="okU-Hh-poh"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lfk-No-hby" secondAttribute="trailing" constant="8" id="pLg-3j-zNg"/>
+                <constraint firstAttribute="trailing" secondItem="OZN-hW-yG6" secondAttribute="trailing" constant="120" id="pRg-xL-Kiz"/>
+                <constraint firstItem="1PT-3s-xaA" firstAttribute="top" secondItem="Lfk-No-hby" secondAttribute="bottom" constant="7" id="sD7-F6-moK"/>
+                <constraint firstItem="1PT-3s-xaA" firstAttribute="top" secondItem="OZN-hW-yG6" secondAttribute="bottom" constant="8" id="wtm-3o-vbG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="pRg-xL-Kiz"/>
+                    <exclude reference="7lf-b9-utS"/>
+                    <exclude reference="sD7-F6-moK"/>
+                    <exclude reference="UYQ-FW-uHZ"/>
+                    <exclude reference="eID-OJ-JTh"/>
+                    <exclude reference="ieO-OH-uXL"/>
+                    <exclude reference="pLg-3j-zNg"/>
+                    <exclude reference="MEN-zG-mhJ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="RmbPrice" destination="Lfk-No-hby" id="GcC-1F-hch"/>
+                <outlet property="totalPrice" destination="Btz-8D-f6T" id="WL1-pA-Mbd"/>
+            </connections>
+            <point key="canvasLocation" x="445.5" y="131"/>
+        </view>
+    </objects>
+</document>

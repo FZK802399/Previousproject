@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MR8-B4-XEY">
+                    <rect key="frame" x="128" y="239" width="120" height="90"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="SNJ-XA-REi"/>
+                        <constraint firstAttribute="width" constant="120" id="hhO-Sl-Q4k"/>
+                    </constraints>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载时间视网络情况决定。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUh-93-MfZ">
+                    <rect key="frame" x="104" y="339" width="168" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如无反应，请耐心等待。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn9-0w-nS1">
+                    <rect key="frame" x="111" y="366" width="154" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="MR8-B4-XEY" secondAttribute="centerX" id="Jii-on-9RS"/>
+                <constraint firstItem="Yn9-0w-nS1" firstAttribute="top" secondItem="hUh-93-MfZ" secondAttribute="bottom" constant="10" id="K7A-gK-1xF"/>
+                <constraint firstItem="hUh-93-MfZ" firstAttribute="top" secondItem="MR8-B4-XEY" secondAttribute="bottom" constant="10" id="ZIK-Fm-0H8"/>
+                <constraint firstAttribute="centerX" secondItem="Yn9-0w-nS1" secondAttribute="centerX" id="i0e-YP-G8z"/>
+                <constraint firstAttribute="centerX" secondItem="hUh-93-MfZ" secondAttribute="centerX" id="oaK-rH-Up1"/>
+                <constraint firstAttribute="centerY" secondItem="MR8-B4-XEY" secondAttribute="centerY" constant="50" id="zZS-Rh-G85"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="webView" destination="MR8-B4-XEY" id="EgW-Ef-R39"/>
+            </connections>
+            <point key="canvasLocation" x="266.5" y="355.5"/>
+        </view>
+    </objects>
+</document>

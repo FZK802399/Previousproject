@@ -1,0 +1,280 @@
+[{
+	"id": 1,
+	"name_cn": "悦椿度假村大堂",
+	"name_en": "The lobby of Angsana Laguna",
+	"scname": "scene_001",
+	"longitude": 98.293782,
+	"latitude": 8.005697,
+	"sound_en": "scene_001_en.mp3",
+	"sound_cn": "scene_001.mp3",
+	"detlaX": "715",
+	"detlaY": "760"
+
+}, {
+	"id": 2,
+	"name_cn": "前院",
+	"name_en": "Courtyard",
+	"scname": "scene_002",
+	"longitude": 98.29383552074432,
+	"latitude": 8.00546103937434,
+	"sound_en": "scene_002_en.mp3",
+	"sound_cn": "scene_002.mp3",
+	"detlaX": "540",
+	"detlaY": "787"
+}, {
+	"id": 3,
+	"name_cn": "池畔小桥",
+	"name_en": "A poolside bridge",
+	"scname": "scene_003",
+	"longitude": 98.29405546188354,
+	"latitude": 7.99654982592965,
+	"sound_en": "scene_003_en.mp3",
+	"sound_cn": "scene_003.mp3",
+	"detlaX": "509",
+	"detlaY": "849"
+}, {
+	"id": 4,
+	"name_cn": "热带树",
+	"name_en": "A tropical tree",
+	"scname": "scene_004",
+	"longitude": 98.29493,
+	"latitude": 8.003795,
+	"sound_en": "scene_004_en.mp3",
+	"sound_cn": "scene_004.mp3",
+	"detlaX": "463",
+	"detlaY": "938"
+}, {
+	"id": 5,
+	"name_cn": "儿童乐园",
+	"name_en": "Outside of Children’s Club",
+	"scname": "scene_005",
+	"longitude": 98.30484867095947,
+	"latitude": 8.084936166103814,
+	"sound_en": "scene_005_en.mp3",
+	"sound_cn": "scene_005.mp3",
+	"detlaX": "590",
+	"detlaY": "704"
+}, {
+	"id": 6,
+	"name_cn": "初遇小象",
+	"name_en": "First meeting with baby elephant",
+	"scname": "scene_006",
+	"longitude": 98.30806732177734,
+	"latitude": 8.026679832317008,
+	"sound_en": "scene_006_en.mp3",
+	"sound_cn": "scene_006.mp3",
+	"detlaX": "532",
+	"detlaY": "680"
+}, {
+	"id": 7,
+	"name_cn": "椰树小走廊",
+	"name_en": "A path of coconut tree",
+	"scname": "scene_007",
+	"longitude": 98.31862449645996,
+	"latitude": 7.993744944680102,
+	"sound_en": "scene_007_en.mp3",
+	"sound_cn": "scene_007.mp3",
+	"detlaX": "509",
+	"detlaY": "704"
+}, {
+	"id": 8,
+	"name_cn": "泳池区",
+	"name_en": "Main swimming pool",
+	"scname": "scene_008",
+	"longitude": 98.32934,
+	"latitude": 7.920566,
+	"sound_en": "scene_008_en.mp3",
+	"sound_cn": "scene_008.mp3",
+	"detlaX": "438",
+	"detlaY": "669"
+}, {
+	"id": 9,
+	"name_cn": "泻湖美景",
+	"name_en": "The lagoon",
+	"scname": "scene_009",
+	"longitude": 98.329353,
+	"latitude": 7.959277,
+	"sound_en": "scene_009_en.mp3",
+	"sound_cn": "scene_009.mp3",
+	"detlaX": "352",
+	"detlaY": "669"
+}, {
+	"id": 10,
+	"name_cn": "与小象游戏",
+	"name_en": "Play with baby elephant",
+	"scname": "scene_010",
+	"longitude": 98.43544,
+	"latitude": 7.89569,
+	"sound_en": "scene_010_en.mp3",
+	"sound_cn": "scene_010.mp3",
+	"detlaX": "294",
+	"detlaY": "551"
+
+}, {
+	"id": 11,
+	"name_cn": "皇帝岛浮桥",
+	"name_en": "The floating bridge of Racha island",
+	"scname": "scene_011",
+	"longitude": 98.370792,
+	"latitude": 7.624567,
+	"sound_en": "scene_011_en.mp3",
+	"sound_cn": "scene_011.mp3",
+	"detlaX": "1793",
+	"detlaY": "280"
+
+}, {
+	"id": 12,
+	"name_cn": "沙滩",
+	"name_en": "The beach",
+	"scname": "scene_012",
+	"longitude": 98.377161,
+	"latitude": 7.607212,
+	"sound_en": "scene_012_en.mp3",
+	"sound_cn": "scene_012.mp3",
+	"detlaX": "1766",
+	"detlaY": "311"
+
+}, {
+	"id": 13,
+	"name_cn": "山崖上",
+	"name_en": "On the cliff",
+	"scname": "scene_013",
+	"longitude": 98.37780475616455,
+	"latitude": 7.607680335821229,
+	"sound_en": "scene_013_en.mp3",
+	"sound_cn": "scene_013.mp3",
+	"detlaX": "1723",
+	"detlaY": "252"
+
+}, {
+	"id": 14,
+	"name_cn": "白色餐厅",
+	"name_en": "A white restaurant",
+	"scname": "scene_014",
+	"longitude": 98.377805,
+	"latitude": 7.60768,
+	"sound_en": "scene_014_en.mp3",
+	"sound_cn": "scene_014.mp3",
+	"detlaX": "1741",
+	"detlaY": "285"
+
+}, {
+	"id": 15,
+	"name_cn": "THE Recha的小路",
+	"name_en": "A path in The Racha Resort",
+	"scname": "scene_015",
+	"longitude": 98.374264,
+	"latitude": 7.609297,
+	"sound_en": "scene_015_en.mp3",
+	"sound_cn": "scene_015.mp3",
+	"detlaX": "1827",
+	"detlaY": "306"
+
+}, {
+	"id": 16,
+	"name_cn": "THE Recha园里",
+	"name_en": "Another view of the Racha Resort",
+	"scname": "scene_015",
+	"longitude": 98.379436,
+	"latitude": 7.609339,
+	"sound_en": "scene_016_en.mp3",
+	"sound_cn": "scene_016.mp3",
+	"detlaX": "1857",
+	"detlaY": "323"
+
+}, {
+	"id": 17,
+	"name_cn": "蛋岛一",
+	"name_en": "Khai island one",
+	"scname": "scene_017",
+	"longitude": 98.5158097743988,
+	"latitude": 7.8911410910847,
+	"sound_en": "scene_017_en.mp3",
+	"sound_cn": "scene_017.mp3",
+	"detlaX": "1384",
+	"detlaY": "571"
+
+}, {
+	"id": 18,
+	"name_cn": "蛋岛二",
+	"name_en": "Khai island two",
+	"scname": "scene_018",
+	"longitude": 98.51581,
+	"latitude": 7.891141,
+	"sound_en": "scene_018_en.mp3",
+	"sound_cn": "scene_018.mp3",
+	"detlaX": "1384",
+	"detlaY": "611"
+
+}, {
+	"id": 19,
+	"name_cn": "悦椿运河村一",
+	"name_en": "Canal Village one",
+	"scname": "scene_019",
+	"longitude": 98.296456,
+	"latitude": 8.001488,
+	"sound_en": "scene_019_en.mp3",
+	"sound_cn": "scene_019.mp3",
+	"detlaX": "526",
+	"detlaY": "1018"
+
+}, {
+	"id": 20,
+	"name_cn": "悦椿运河村二",
+	"name_en": "Canal Village two",
+	"scname": "scene_020",
+	"longitude": 98.298559,
+	"latitude": 8.000592,
+	"sound_en": "scene_020_en.mp3",
+	"sound_cn": "scene_020.mp3",
+	"detlaX": "537",
+	"detlaY": "1053"
+
+}, {
+	"id": 21,
+	"name_cn": "酒店码头",
+	"name_en": "The pier",
+	"scname": "scene_021",
+	"longitude": 98.301973,
+	"latitude": 8.007302,
+	"sound_en": "scene_021_en.mp3",
+	"sound_cn": "scene_021.mp3",
+	"detlaX": "770",
+	"detlaY": "692"
+
+}, {
+	"id": 22,
+	"name_cn": "运河木桥",
+	"name_en": "The Canal bridge",
+	"scname": "scene_022",
+	"longitude": 98.301973,
+	"latitude": 8.007302,
+	"sound_en": "scene_022_en.mp3",
+	"sound_cn": "scene_022.mp3",
+	"detlaX": "714",
+	"detlaY": "694"
+
+}, {
+	"id": 23,
+	"name_cn": "观景塔上",
+	"name_en": "Top of the view tower",
+	"scname": "scene_023",
+	"longitude": 98.29514443874359,
+	"latitude": 8.008704088361343,
+	"sound_en": "scene_023_en.mp3",
+	"sound_cn": "scene_023.mp3",
+	"detlaX": "649",
+	"detlaY": "746"
+
+}, {
+	"id": 24,
+	"name_cn": "Lotus餐厅",
+	"name_en": "Lotus Restaurant",
+	"scname": "scene_024",
+	"longitude": 98.295144,
+	"latitude": 8.008704,
+	"sound_en": "scene_024_en.mp3",
+	"sound_cn": "scene_024.mp3",
+	"detlaX": "148",
+	"detlaY": "476"
+}]

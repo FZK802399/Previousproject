@@ -1,0 +1,837 @@
+<krpano version="1.0.8.14" title="3D 实景虚拟游" onstart="startup();">
+
+ 
+	<action name="startup">
+		<!-- load the first scene -->
+		loadscene(get(scene[0].name), null, MERGE);
+		
+		
+
+		<!--编辑:加载背景音乐
+		playsound(bggsnd, 'gugongdejiyi.mp3', 10);
+		-->
+		
+	</action>
+	
+
+	<!--STAR:景区介绍-->
+		<plugin name="zhongwen" url="zhongwen.png" keep="true" align="righttop"  x="120" y="6" onhover="set(url,zhongwen1.png);" onout="set(url,zhongwen.png);" zorder="20"      onclick="set(plugin[jianjie].visible,true); set(plugin[closejianjie].visible,true););    set(visible,false); closeinfojianjie2();" /> 
+		<plugin name="jianjie" url="jianjie.png" keep="true" align="center" alpha="0.9" zorder="60" onhover="showtext(点击关闭简介,STYLE2);"
+			handcursor="true" visible="false" onclick=" set(visible,false); closeinfojianjie();"  />
+		<plugin name="closejianjie" url="close.png" keep="true" parent="jianjie" align="center" zorder="6" x="315" y="-125"
+			handcursor="true" visible="false"   onhover="showtext(关闭,STYLE2); set(url,close1.png);"  onout="set(url,close.png);" onclick=" set(visible,false); closeinfojianjie();" />
+			
+		<action name="closeinfojianjie">
+			set(plugin[jianjie].visible,false);
+			set(plugin[closejianjie].visible,false);
+		</action>
+		
+		<action name="openinfojianjie">
+			set(plugin[jianjie].visible,true);
+			set(plugin[closejianjie].visible,true);
+		</action>
+	<!--END:景区介绍-->
+
+	<!--提示文字-->	
+	<textstyle name="STYLE2"
+			   font="Arial"
+			   fontsize="18"
+			   bold="true"
+			   background="false"
+			   border="false"
+			   textcolor="0xFFFFFF"
+			   effect="glow(0x000000);"
+			   textalign="center"
+			   />
+
+	<!--鼠标指针-->
+    <control movetocursor="arrow" />
+	
+	<action name="arrowcursor">
+		set(control.mousetype, moveto);
+		set(cursors.url,  move-cursors.png);
+		set(cursors.type, 4way);
+		set(cursors.move,      112|0|28|28);
+		set(cursors.drag,      112|0|28|28);
+		set(cursors.arrow_r,    0|0|28|28);
+		set(cursors.arrow_d,   28|0|28|28);
+		set(cursors.arrow_l,   56|0|28|28);
+		set(cursors.arrow_u,   84|0|28|28);
+	</action>
+	
+	
+	
+	<!--景区LOGO-->
+    <plugin name="logo" url="logo.png" keep="true"  scale="0.9" align="top" zorder="2"  x="0" y="0"   />
+	
+	
+		<!--细节图片热点-->
+		<style name="hotspot_click"
+	       url="click.png"
+	       crop="0|0|105|105"
+	       frames="4" framewidth="105" frameheight="105" frame="0"
+	       onloaded="style_click(); "
+	       altonloaded="if(isphone, mul(scale,2));  onloaded(); "
+	       />	
+
+	<action name="style_click"> 
+		inc(frame,1,get(frames),0); 
+		mul(ypos,frame,frameheight); 
+		txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight)); 
+		delayedcall(0.2,style_click() ); 
+	</action>
+	
+	
+	<autorotate enabled="true"  waittime="5" speed="2.0" />
+	
+	<!--START:音乐控制-->
+	   <plugin name="soundinterface"
+				url="soundinterface.swf"
+				alturl="soundinterface.js"
+				rootpath=""
+				preload="true"
+				keep="true"
+				volume="1.0"
+				/>
+
+				
+		<plugin name="sndbt" url="soundonoff.png" align="bottom" x="10" y="20"  scale="0.9" keep="true"
+		    onover="tween(alpha,1);" 
+		    onout="tween(alpha,0.45);" 
+			crop="0|0|50|50"
+			onhover="showtext(播放/暂停语音解说,STYLE2);"
+			zorder="100"
+	        onclick="switch(soundinterface.mute); switch(crop, 0|0|50|50, 0|50|50|50);" />	
+				
+				
+
+	<!--END:音乐控制-->
+	
+	<!--场景景山公园-->
+		<plugin name="info" url="pic_shenwumen.jpg" keep="true" align="center" 
+		handcursor="true" width="500" height="157" visible="false" />
+		<plugin name="close" url="close.png" keep="true" align="center" zorder="3" x="235" y="-65"
+		handcursor="true" width="26" height="26" visible="false" onclick="closeinfo();" />
+		
+	 <action name="closeinfo">
+		set(plugin[info].visible,false);
+		set(plugin[close].visible,false);
+		 pausesoundtoggle(bgsndnan);
+		 stopsound(music);
+		
+    </action>
+    <action name="openinfo">
+        set(plugin[info].visible,true);
+        set(plugin[close].visible,true);
+		pausesound(bgsndnan); 
+		stopsound(yuyinjieshuo);
+		playsound(music, '1.mp3', 1);   );
+      
+    </action>
+
+
+	
+		<!--金水桥-->
+		<plugin name="info3" url="pic_jinshuiqiao.jpg" keep="true" align="center" 
+		handcursor="true" width="500" height="310" visible="false" />
+		<plugin name="close3" url="close.png" keep="true" align="center" zorder="3" x="235" y="-140"
+		handcursor="true" width="26" height="26" visible="false" onclick="closeinfo3();" />
+		
+	 <action name="closeinfo3">
+		set(plugin[info3].visible,false);
+		set(plugin[close3].visible,false);
+		 pausesoundtoggle(bgsndnan);
+		 stopsound(music);
+		
+    </action>
+    <action name="openinfo3">
+        set(plugin[info3].visible,true);
+        set(plugin[close3].visible,true);
+		pausesound(bgsndnan); 
+		stopsound(yuyinjieshuo);
+		playsound(music, '3.mp3', 1);   );
+      
+    </action>
+	
+	
+	
+		<!--太和门-->
+		<plugin name="info6" url="pic_taihemen.jpg" keep="true" align="center" 
+		handcursor="true" width="369" height="386" visible="false" />
+		<plugin name="close6" url="close.png" keep="true" align="center" zorder="3" x="170" y="-180"
+		handcursor="true" width="26" height="26" visible="false" onclick="closeinfo6();" />
+		
+	 <action name="closeinfo6">
+		set(plugin[info6].visible,false);
+		set(plugin[close6].visible,false);
+		 pausesoundtoggle(bgsndnan);
+		 stopsound(music);
+		
+    </action>
+    <action name="openinfo6">
+        set(plugin[info6].visible,true);
+        set(plugin[close6].visible,true);
+		pausesound(bgsndnan); 
+		stopsound(yuyinjieshuo);
+		playsound(music, '8.mp3', 1);   );
+      
+    </action>
+	
+	
+	
+<!--景山公园-->
+	<scene name="scene_1jingshangongyuan" title="景山公园" onstart="startscene();" thumburl="1jingshangongyuan_thumb.jpg">
+
+	
+	  <plugin name="z1" url="z1.png" visible="true" align="top"   y="40"  scale="0.7"  handcursor="false" />
+
+	
+	  <action name="startscene">
+	  
+
+			
+	    action(activatespot, scene_1jingshangongyuan, 170); 
+		stopsound(music);
+
+			
+	    stopsound(yuyinjieshuo);
+			
+	    </action>
+
+		<view hlookat="65" vlookat="12" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="60" fovmax="120" limitview="auto" />
+
+		<preview url="1jingshangongyuan_preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="506" progressive="false">
+
+			
+			<tablet>
+				<cube url="1jingshangongyuan_tablet_%s.jpg" />
+			</tablet>
+		
+		</image>
+
+			 
+		<events name="currentpano"
+	        onnewpano="playsound(bgsndnan, 'b1.mp3', 1);" 
+	        onremovepano="stopsound(bgsndnan);"
+			volume="10"
+	        />		 
+			        
+
+
+
+		 <hotspot name="spot2"  
+				 url="wumen.png"		
+       
+		         ath="67" 
+		         atv="-0"
+		         zoom="false"
+
+                 onclick=" loadscene('scene_001-wumen-2','null',MERGE,ZOOMBLEND(1.5,10));"
+		         />			 	 
+		
+		<!--向后:需要修改的参数,ath="鼠标热H",atV="鼠标热V", onclick="loadscene('场景名称','view.hlookat=修改此值',MERGE,BLEND(2));"-->
+
+
+  <hotspot name="spot3" 
+		         url="5.png"
+				 visable="true"
+				 scale="0.25"
+			     ath="67"
+		         atv="8"
+		         zoom="true"
+				
+				 onclick="openinfo();"
+				 
+		         /> 	
+				 
+
+	</scene>
+	
+	<!--午门广场-->
+	
+	<scene name="scene_001-wumen-2" title="午门广场" onstart="startscene();" thumburl="001-wumen-2_thumb.jpg">
+	
+	 <plugin name="z1" url="z2.png" visible="true" align="top"   y="40"  scale="0.7"  handcursor="false" />
+	
+	   <action name="startscene">
+
+			action(activatespot,scene_001-wumen-2, 170); 
+			stopsound(music);
+	
+	         stopsound(yuyinjieshuo);
+			
+	    </action>
+
+		<view hlookat="70" vlookat="-7" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="60" fovmax="120" limitview="auto" />
+
+		<preview url="001-wumen-2_preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="728" progressive="false">
+
+			<tablet>
+				<cube url="001-wumen-2_tablet_%s.jpg" />
+			</tablet>
+		</image>
+
+
+         <events name="currentpano"
+	        onnewpano="playsound(bgsndnan, 'b2.mp3', 1);" 
+	        onremovepano="stopsound(bgsndnan);"
+			volume="10"
+	        />	
+			        
+
+
+		<!--摄影师-->
+		<!--向前:需要修改的参数,ath="鼠标热H",atV="鼠标热V", onclick="loadscene('场景名称','null',MERGE,BLEND(2));"showtext(经管学院,STYLE2);-->
+		  <hotspot name="spot1"  
+				 url="jinshuiqiao.png"		
+				
+		         ath="72" 
+		         atv="5"
+		         zoom="false"
+				
+                 onclick=" loadscene('scene_002-jishuiqiao','null',MERGE,ZOOMBLEND(1.5,10)); "
+		         />
+		
+
+				 
+				 
+        <hotspot name="spot3" 
+		         url="5.png"
+				 visable="true"
+				 scale="0.3"
+			     ath="31"
+		         atv="-16"
+		         zoom="true"
+				
+				 onclick="	pausesound(bgsndnan); stopsound(yuyinjieshuo); playsound(music, '47.mp3', 1);   );"
+				 
+		         /> 	
+
+				 
+	</scene>
+	
+
+	
+   <scene name="scene_002-jishuiqiao" title="金水桥" onstart="startscene();" thumburl="002-jishuiqiao_thumb.jpg">
+		
+		
+		 <plugin name="z1" url="z4.png" visible="true" align="top"   y="40"  scale="0.7"  handcursor="false" />
+
+	
+	   <action name="startscene">
+	  
+
+			
+			action(activatespot,scene_002-jishuiqiao, 170); 
+			stopsound(music);
+		
+	    stopsound(yuyinjieshuo);
+			
+	    </action>
+
+		<view hlookat="163" vlookat="8" fovtype="MFOV" fov="90" maxpixelzoom="2.0" fovmin="60" fovmax="120" limitview="auto" />
+
+		<preview url="002-jishuiqiao_preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="919" progressive="false">
+
+			<tablet>
+				<cube url="002-jishuiqiao_tablet_%s.jpg" />
+			</tablet>
+		</image>
+
+        <events name="currentpano"
+	        onnewpano="playsound(bgsndnan, 'b4.mp3', 1);" 
+	        onremovepano="stopsound(bgsndnan);"
+			volume="10"
+	        />	
+
+
+
+		<!--摄影师-->
+		<!--向前:需要修改的参数,ath="鼠标热H",atV="鼠标热V", onclick="loadscene('场景名称','null',MERGE,BLEND(2));"showtext(经管学院,STYLE2);-->
+
+				 
+		 <hotspot name="spot3"  
+				 url="taihemen.png"		
+	
+		         ath="79" 
+		         atv="10"
+		         zoom="false"
+				
+		
+                 onclick=" loadscene('scene_004-taihemen','null',MERGE,ZOOMBLEND(1.5,10));"
+		         />
+		
+		<!--向后:需要修改的参数,ath="鼠标热H",atV="鼠标热V", onclick="loadscene('场景名称','view.hlookat=修改此值',MERGE,BLEND(2));"-->
+		<hotspot name="spot2"  
+				 url="houwumenguangchang.png"		
+
+		         ath="-101" 
+		         atv="4"
+		         zoom="false"
+                 onclick="loadscene('scene_001-wumen-2','view.hlookat=-91',MERGE,ZOOMBLEND(1.5,10));"
+		         />
+				 
+				 
+		<!--特写图片-->		 
+
+        <hotspot name="spot4" 
+		         url="5.png"
+				 visable="true"
+				 scale="0.25"
+			     ath="169"
+		         atv="23"
+		         zoom="true"
+			
+				 onclick="openinfo3();"
+		         /> 		 
+
+
+
+	</scene>
+	
+	
+
+
+	<!--太和门-->
+		<scene name="scene_004-taihemen" title="太和门" onstart="startscene();" thumburl="004-taihemen_thumb.jpg">
+		
+		
+ <plugin name="z1" url="z8.png" visible="true" align="top"   y="40"  scale="0.7"  handcursor="false" />
+
+	
+	  <action name="startscene">
+	  
+
+			
+			action(activatespot,scene_004-taihemen, 170); 
+			
+			
+			
+	     stopsound(music);
+			
+	    stopsound(yuyinjieshuo);
+			
+	    </action>
+
+		<view hlookat="263" vlookat="0" fovtype="MFOV" fov="99" maxpixelzoom="2.0" fovmin="60" fovmax="120" limitview="auto" />
+
+		<preview url="004-taihemen_preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="529" progressive="false">
+
+			<mobile>
+				<cube url="004-taihemen_mobile_%s.jpg" />
+			</mobile>
+			<tablet>
+				<cube url="004-taihemen_tablet_%s.jpg" />
+			</tablet>
+		</image>
+
+        <events name="currentpano"
+	        onnewpano="playsound(bgsndnan, 'b8.mp3', 1);" 
+	        onremovepano="stopsound(bgsndnan);"
+			volume="10"
+	        />			    
+			
+
+
+		<!--摄影师-->
+		<!--向前:需要修改的参数,ath="鼠标热H",atV="鼠标热V", onclick="loadscene('场景名称','null',MERGE,BLEND(2));"showtext(经管学院,STYLE2);-->
+		<hotspot name="spot1"  
+				 url="taihedianqianguangchang.png"		
+              
+
+		         ath="-95" 
+		         atv="-1"
+		         zoom="false"
+
+                 onclick="stopsound(music); stopsound(yuyinjieshuo); stopsound(bgsndnan); openurl(http://quanjingke.com,_blank); "
+		         />
+		
+		<!--向后:需要修改的参数,ath="鼠标热H",atV="鼠标热V", onclick="loadscene('场景名称','view.hlookat=修改此值',MERGE,BLEND(2));"-->
+		<hotspot name="spot2"  
+				 url="houjinshuiqiao.png"		
+		         ath="85" 
+		         atv="6"
+		         zoom="false"
+
+                 onclick=" loadscene('scene_002-jishuiqiao','view.hlookat=-4',MERGE,ZOOMBLEND(1.5,10));"
+		         />
+				 
+
+	     <hotspot name="spot7" 
+		         url="5.png"
+				 visable="true"
+				 scale="0.25"
+			     ath="-96"
+		         atv="-18"
+		         zoom="true"
+				  onclick="openinfo6();"
+		         /> 	
+
+				 			 
+
+	</scene>
+	
+		<!--样板间平面图
+    <layer name="Ypingmiantu" type="container" keep="true"  bgcolor="0x000000" bgalpha="0.5" handcursor="true"  visible="true" align="center" width="629" height="422" x="0" y="0"  maskchildren="true"  children="true" >
+
+	   
+	   <layer name="sanshi" url="sanshi.png" keep="true" visible="true" align="lefttop"   handcursor="true"  zorder="2"  x="0" y="0" onclick="loadscene('scene_010','null',MERGE,BLEND(1)); set(layer[Ypingmiantu].visible,false); "   />
+
+	</layer>-->
+
+
+		
+	<!--小地图显示-->
+    <plugin name="xiaodt" url="xiaomap.png"  align="rightbottom"    zorder="20" keep="true"    handcursor="true"  visible="true"  scale="0.2"  alpha="0.9"    x="10" y="70"  onclick="action(openimagemap); set(plugin[xiaodt].visible,false); "  />
+
+    <!--地图-->
+	 
+	 <!--imagemap start-->
+	<plugin name="imagemap" url="map.png" keep="true"  
+	        visible="true"
+	        align="rightbottom" x="0"  y="30" alpha="0.90" handcursor="false" 
+	        scalechildren="true"
+	        maskchildren="true"
+			zorder="0"
+			parent="map"
+            width="0"
+			height="0" 
+			onclick="action(openimagemap); "
+            />
+			
+    <action name="openimagemap">
+	   
+        set(plugin[imagemap].onclick,action(closeimagemap););
+		set(plugin[imagemap].visible,true); 
+        tween(plugin[imagemap].width,812,distance(812,1.0),easeoutquad);
+        tween(plugin[imagemap].height,540,distance(540,1.0),easeoutquad);
+		
+    </action>
+			
+	<action name="closeimagemap">
+	
+	set(plugin[xiaodt].visible,true);
+
+        set(plugin[imagemap].onclick,action(openimagemap); ); 
+        tween(plugin[imagemap].width,0,distance(812,1.5),easeoutquad); 
+        tween(plugin[imagemap].height,0,distance(540,1.5),easeoutquad); 
+    </action>
+		
+
+	 <!-- 地图上的扇形旋转图标radar plugin, set heading with "plugin[radar].heading" -->
+    <plugin name="radar"
+	        url="radar.swf"
+	        alturl="radar.js"
+	        zorder="5"
+	        keep="true"
+	        heading="0"
+	        parent="imagemap"
+	        align="righttop"
+	        edge="center"
+	        x="30" y="460"
+	        linecolor="0"
+	        fillcolor="0xFF0000"
+	        scale="0.2"
+		    visible="true"
+			editmode="true"
+			
+	        />
+			
+			
+			
+			
+
+<!--1-->
+	<plugin name="scene_1jingshangongyuan" url="mappoint2.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="790"  y="260" zorder="5" onhover="showtext(景山公园); " onclick="closeimagemap();  loadscene(scene_1jingshangongyuan, null, MERGE, BLEND(1)); " />
+	
+	<plugin name="scene_001-wumen-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="10"  y="300" zorder="2" onhover="showtext(午门售票区); " onclick="closeimagemap();   " />
+	<!--2-->
+	<plugin name="scene_001-wumen-2" url="mappoint2.png" keep="true" parent="imagemap"  scale="0.10" align="righttop" edge="center" x="35"  y="270" zorder="2" onhover="showtext(午门); " onclick="closeimagemap();  loadscene(scene_001-wumen-2, null, MERGE, BLEND(1)); " />
+	<!--3-->
+	<plugin name="scene_002-jishuiqiao" url="mappoint2.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="110"  y="270" zorder="2" onhover="showtext(金水桥); " onclick="closeimagemap();  loadscene(scene_002-jishuiqiao, null, MERGE, BLEND(1)); " />
+
+	<plugin name="scene_003-xihemen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="119"  y="326" zorder="2" onhover="showtext(熙和门); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_003-yingwudian-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="150"  y="397" zorder="2" onhover="showtext(武英门); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_003-yingwudian-2" url="mappoint.png" keep="true" parent="imagemap"  scale="0.10" align="righttop" edge="center" x="185"  y="397" zorder="2" onhover="showtext(武英殿); " onclick="closeimagemap();  " />
+<!--4-->
+	<plugin name="scene_004-taihemen" url="mappoint2.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="155"  y="260" zorder="2" onhover="showtext(太和门); " onclick="closeimagemap();  loadscene(scene_004-taihemen, null, MERGE, BLEND(1)); " />
+	
+	<plugin name="scene_005-taihedian-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="230"  y="260" zorder="2" onhover="showtext(太和殿前广场); " onclick="closeimagemap();   " />
+
+	<plugin name="scene_005-taihedian-2" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="280"  y="260" zorder="2" onhover="showtext(太和殿); " onclick="closeimagemap();  " />
+
+	<plugin name="scene_005-taihedian-hongyige" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="250"  y="320" zorder="2" onhover="showtext(弘義阁); " onclick="closeimagemap();   " />
+
+	<plugin name="scene_005-taihedian-tirenmen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="250"  y="195" zorder="2" onhover="showtext(体仁阁); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_006-zhonghedian-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="343"  y="265" zorder="2" onhover="showtext(中和殿); " onclick="closeimagemap();  " />
+
+	<plugin name="scene_006-zhonghedian-3" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="370"  y="230" zorder="2" onhover="showtext(保和殿左侧); " onclick="  closeimagemap();  " />
+
+	<plugin name="scene_006-zhonghedian-4" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="370"  y="290" zorder="2" onhover="showtext(保和殿右侧); " onclick="closeimagemap();   " />
+
+	<plugin name="scene_007-baohedian" url="mappoint.png" keep="true" parent="imagemap"  scale="0.10" align="righttop" edge="center" x="370"  y="265" zorder="2" onhover="showtext(保和殿); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_008-qianqingmen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="435"  y="262" zorder="2" onhover="showtext(乾清门); " onclick="closeimagemap();  " />
+	
+    <plugin name="scene_009-qianqinggong" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="490"  y="262" zorder="2" onhover="showtext(乾清宫); " onclick="closeimagemap();   " />
+
+	<plugin name="scene_010-jiaotaidian" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="530"  y="262" zorder="2" onhover="showtext(交泰殿); " onclick="closeimagemap();  " />
+	
+	<plugin name="scene_011-kunninggong" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="560"  y="262" zorder="2" onhover="showtext(坤宁宫); " onclick="closeimagemap();  " />
+	
+	<plugin name="scene_012-kunningmen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="580"  y="262" zorder="2" onhover="showtext(坤宁门); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_013-yuhuayuan-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="605"  y="262" zorder="2" onhover="showtext(御花园); " onclick="closeimagemap();  " />
+	
+	<plugin name="scene_015-qinandian" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="633"  y="262" zorder="2" onhover="showtext(钦安殿); " onclick="closeimagemap();  " />
+	
+	<plugin name="scene_017-shenwumen-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="650"  y="262" zorder="2" onhover="showtext(顺贞门外); " onclick="closeimagemap(); " />
+	
+	<plugin name="scene_801-junjichu" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="435"  y="310" zorder="2" onhover="showtext(军机处); " onclick="closeimagemap();  " />
+	
+    <plugin name="scene_803-yuehuamen-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="480"  y="295" zorder="2" onhover="showtext(月华门); " onclick="closeimagemap();  " />
+
+	<plugin name="scene_803-yangxinmen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="473"  y="323" zorder="2" onhover="showtext(养心门); " onclick="closeimagemap();   " />	
+
+	<plugin name="scene_804-yangxindian-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="493"  y="323" zorder="2" onhover="showtext(养心殿); " onclick="closeimagemap();   " />	
+
+	<plugin name="scene_805-changchungong" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="560"  y="350" zorder="2" onhover="showtext(长春宫); " onclick="closeimagemap();  " />	
+
+	<plugin name="scene_806-yikungong-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="560"  y="320" zorder="2" onhover="showtext(翊坤宫); " onclick="closeimagemap();   " />	
+
+	<plugin name="scene_807-weishengjian" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="620"  y="310" zorder="2" onhover="showtext(洗手间); " onclick="closeimagemap();  " />	
+
+	<plugin name="scene_801-jingyunmen-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="440"  y="220" zorder="2" onhover="showtext(景运门前); " onclick="closeimagemap();  " />	
+
+	<plugin name="scene_801-jingyunmen-2" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="425"  y="200" zorder="2" onhover="showtext(景运门); " onclick="closeimagemap();   " />	
+
+	<plugin name="scene_802-chengsumen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="440"  y="170" zorder="2" onhover="showtext(钟表馆入口); " onclick="closeimagemap();  " />
+	
+	<plugin name="scene_802-zhongbiaoguan-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="470"  y="150" zorder="2" onhover="showtext(钟表馆); " onclick="closeimagemap();   " />
+		
+	<plugin name="scene_802-zhongbiaoguan-3" url="mappoint.png" keep="true" parent="imagemap"  scale="0.10" align="righttop" edge="center" x="500"  y="150" zorder="2" onhover="showtext(奉先殿); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_803-zhenbaoguan-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="440"  y="110" zorder="2" onhover="showtext(珍宝馆入口); " onclick="closeimagemap();   " />
+		
+	<plugin name="scene_803-zhenbaoguan-2" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="420"  y="80" zorder="2" onhover="showtext(九龙壁); " onclick="closeimagemap();  " />
+
+	<plugin name="scene_803-zhenbaoguan-4" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="460"  y="80" zorder="2" onhover="showtext(宁寿门); " onclick="closeimagemap();  " />	
+	
+	<plugin name="scene_803-zhenbaoguan-5" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="500"  y="80" zorder="2" onhover="showtext(皇极殿); " onclick="closeimagemap();  " />	
+				
+	<plugin name="scene_803-zhenbaoguan-6" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="555"  y="55" zorder="2" onhover="showtext(畅音阁); " onclick="closeimagemap();  " />	
+				
+    <plugin name="scene_803-zhenbaoguan-7" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="600"  y="85" zorder="2" onhover="showtext(乐寿堂); " onclick="closeimagemap();  " />	
+			
+    <plugin name="scene_803-zhenbaoguan-9" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="620"  y="85" zorder="2" onhover="showtext(颐和轩); " onclick="closeimagemap();  " />				
+
+    <plugin name="scene_803-zhenbaoguan-10" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="630"  y="105" zorder="2" onhover="showtext(倦勤殿); " onclick="closeimagemap();  " />				
+		
+    <plugin name="scene_803-zhenbaoguan-11" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="645"  y="100" zorder="2" onhover="showtext(珍妃井); " onclick="closeimagemap(); " />				
+	
+    <plugin name="scene_804-xishoujian" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="660"  y="120" zorder="2" onhover="showtext(洗手间); " onclick="closeimagemap();  " />			
+	
+    <plugin name="scene_805-jingyanggong-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="590"  y="175" zorder="2" onhover="showtext(景阳宫); " onclick="closeimagemap();   " />
+	
+	<plugin name="scene_805-jingyanggong-2" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="610"  y="175" zorder="2" onhover="showtext(御书房); " onclick="closeimagemap();  " />		
+
+    <plugin name="scene_806-yanxigong" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="530"  y="175" zorder="2" onhover="showtext(延禧宫); " onclick="closeimagemap(); " />	
+
+    <plugin name="scene_807-jingrengong-1" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="510"  y="205" zorder="2" onhover="showtext(景仁宫入口); " onclick="closeimagemap();  " />	
+	
+	<plugin name="scene_807-jingrengong-2" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="530"  y="205" zorder="2" onhover="showtext(景仁宫); " onclick="closeimagemap();  " />	
+	
+    <plugin name="scene_808-chengqianmen" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="549"  y="205" zorder="2" onhover="showtext(承乾门); " onclick="closeimagemap();   " />	
+
+    <plugin name="scene_809-zhongcuigong" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="590"  y="205" zorder="2" onhover="showtext(钟粹宫); " onclick="closeimagemap();   " />	
+	
+    <plugin name="scene_017-shenwumen-2" url="mappoint.png" keep="true" parent="imagemap" scale="0.10" align="righttop" edge="center" x="705"  y="266" zorder="2" onhover="showtext(神武门); " onclick="closeimagemap();  " />				
+		
+		
+		
+<plugin name="activespot" url="mappointactive.png" keep="true" scale="0.060" align="center" edge="center" visible="false" zorder="6" />
+
+    <action name="activatespot">
+		set(plugin[activespot].parent, plugin[%1]); 
+		set(plugin[activespot].visible, true); 
+		
+		copy(plugin[radar].x, plugin[%1].x); 
+		copy(plugin[radar].y, plugin[%1].y); 
+		
+		set(plugin[radar].visible, true); 
+		set(plugin[radar].heading, %2); 
+	</action>
+	
+	
+	<!--左侧菜单开始-->
+	<!--显隐按钮-->
+
+
+   <plugin name="caidan" url="caidan.png" keep="true"  zorder="4" align="left"   x="0" y="-50"   alpha="1.0" visible="true"  onclick="   set(plugin[xianyin].visible,true);  set(plugin[d1].visible,true); set(plugin[d2].visible,true); set(plugin[d3].visible,true); set(plugin[d4].visible,true); set(plugin[d5].visible,true); set(plugin[d6].visible,true); set(plugin[caidan].alpha,0); "   />
+
+
+
+   <plugin name="xianyin" url="beijing.png" keep="true"    visible="false" zorder="5"    align="left" x="0" y="-10"   handcursor="true"  onclick=" set(plugin[d1].visible,false); set(plugin[d2].visible,false);   set(plugin[d3].visible,false); set(plugin[d4].visible,false); set(plugin[d5].visible,false); set(plugin[caidan].visible,true);  set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " />
+
+
+
+<!-- 景区切换Bottons-->
+
+
+<plugin name="d1" url="D1_1.png" keep="true" parent="xianyin" align="left" x="1" y="-175" onclick="loadscene(scene_1jingshangongyuan, null, MERGE, BLEND(1)); set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1);  " onhover="set(url,D1_2.png);" onout="set(url,D1_1.png);" />
+
+<plugin name="d2" url="D2_1.png" keep="true" parent="xianyin" align="left" x="1" y="-150" onclick="loadscene(scene_001-wumen-2, null, MERGE, BLEND(1)); set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D2_2.png);" onout="set(url,D2_1.png);" />
+
+<plugin name="d3" url="D4_1.png" keep="true" parent="xianyin" align="left" x="1" y="-125" onclick="  loadscene(scene_002-jishuiqiao, null, MERGE, BLEND(1)); set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D4_2.png);" onout="set(url,D4_1.png);" />
+
+<plugin name="d8" url="D8_1.png" keep="true" parent="xianyin" align="left" x="1" y="-100" onclick="loadscene(scene_004-taihemen, null, MERGE, BLEND(1)); set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D8_2.png);" onout="set(url,D8_1.png);" />
+
+
+
+
+<plugin name="d4" url="D3_1.png" keep="true" parent="xianyin" align="left" x="1" y="0" onclick="loadscene(scene_002-jishuiqiao, null, MERGE, BLEND(1)); set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D3_2.png);" onout="set(url,D3_1.png);" />
+
+<plugin name="d5" url="D5_1.png" keep="true" parent="xianyin" align="left" x="1" y="-75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D5_2.png);" onout="set(url,D5_1.png);" />
+
+<plugin name="d6" url="D6_1.png" keep="true" parent="xianyin" align="left" x="1" y="-50" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D6_2.png);" onout="set(url,D6_1.png);" />
+
+<plugin name="d7" url="D7_1.png" keep="true" parent="xianyin" align="left" x="1" y="-25" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D7_2.png);" onout="set(url,D7_1.png);" />
+
+
+
+<plugin name="d9" url="D9_1.png" keep="true" parent="xianyin" align="left" x="1" y="25" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D9_2.png);" onout="set(url,D9_1.png);" />
+
+<plugin name="d10" url="D10_1.png" keep="true" parent="xianyin" align="left" x="1" y="50" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D10_2.png);" onout="set(url,D10_1.png);" />
+
+<plugin name="d11" url="D11_1.png" keep="true" parent="xianyin" align="left" x="1" y="75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D11_2.png);" onout="set(url,D11_1.png);" />
+
+<plugin name="d12" url="D12_1.png" keep="true" parent="xianyin" align="left" x="1" y="100" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D12_2.png);" onout="set(url,D12_1.png);" />
+
+<plugin name="d13" url="D13_1.png" keep="true" parent="xianyin" align="left" x="1" y="125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D13_2.png);" onout="set(url,D13_1.png);" />
+
+<plugin name="d14" url="D14_1.png" keep="true" parent="xianyin" align="left" x="1" y="150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D14_2.png);" onout="set(url,D14_1.png);" />
+
+<plugin name="d15" url="D15_1.png" keep="true" parent="xianyin" align="left" x="1" y="175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D15_2.png);" onout="set(url,D15_1.png);" />
+
+<plugin name="d16" url="D16_1.png" keep="true" parent="xianyin" align="left" x="1" y="200" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D16_2.png);" onout="set(url,D16_1.png);" />
+
+
+
+	<plugin name="d17" url="D17_1.png" keep="true" parent="xianyin" align="left" x="155" y="-175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D17_2.png);" onout="set(url,D17_1.png);" />
+
+
+  <plugin name="d18" url="D18_1.png" keep="true" parent="xianyin" align="left" x="155" y="-150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D18_2.png);" onout="set(url,D18_1.png);" />
+
+<plugin name="d19" url="D19_1.png" keep="true" parent="xianyin" align="left" x="155" y="-125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D19_2.png);" onout="set(url,D19_1.png);" />
+
+<plugin name="d20" url="D20_1.png" keep="true" parent="xianyin" align="left" x="155" y="-100" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D20_2.png);" onout="set(url,D20_1.png);" />
+
+<plugin name="d21" url="D21_1.png" keep="true" parent="xianyin" align="left" x="155" y="-75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D21_2.png);" onout="set(url,D21_1.png);" />
+
+<plugin name="d22" url="D22_1.png" keep="true" parent="xianyin" align="left" x="155" y="-50" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D22_2.png);" onout="set(url,D22_1.png);" />
+
+<plugin name="d23" url="D23_1.png" keep="true" parent="xianyin" align="left" x="155" y="-25" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D23_2.png);" onout="set(url,D23_1.png);" />
+
+<plugin name="d24" url="D24_1.png" keep="true" parent="xianyin" align="left" x="155" y="0" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D24_2.png);" onout="set(url,D24_1.png);" />
+
+<plugin name="d25" url="D25_1.png" keep="true" parent="xianyin" align="left" x="155" y="25" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D25_2.png);" onout="set(url,D25_1.png);" />
+
+<plugin name="d26" url="D26_1.png" keep="true" parent="xianyin" align="left" x="155" y="50" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D26_2.png);" onout="set(url,D26_1.png);" />
+
+<plugin name="d27" url="D27_1.png" keep="true" parent="xianyin" align="left" x="155" y="75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D27_2.png);" onout="set(url,D27_1.png);" />
+
+<plugin name="d28" url="D28_1.png" keep="true" parent="xianyin" align="left" x="155" y="100" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D28_2.png);" onout="set(url,D28_1.png);" />
+
+<plugin name="d29" url="D29_1.png" keep="true" parent="xianyin" align="left" x="155" y="125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D29_2.png);" onout="set(url,D29_1.png);" />
+
+<plugin name="d30" url="D30_1.png" keep="true" parent="xianyin" align="left" x="155" y="150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D30_2.png);" onout="set(url,D30_1.png);" />
+
+<plugin name="d31" url="D31_1.png" keep="true" parent="xianyin" align="left" x="155" y="175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D31_2.png);" onout="set(url,D31_1.png);" />
+
+<plugin name="d32" url="D32_1.png" keep="true" parent="xianyin" align="left" x="155" y="200" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D32_2.png);" onout="set(url,D32_1.png);" />	
+
+
+
+
+	<plugin name="d33" url="D33_1.png" keep="true" parent="xianyin" align="left" x="310" y="-175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D33_2.png);" onout="set(url,D33_1.png);" />
+
+
+  <plugin name="d34" url="D34_1.png" keep="true" parent="xianyin" align="left" x="310" y="-150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D34_2.png);" onout="set(url,D34_1.png);" />
+
+<plugin name="d35" url="D35_1.png" keep="true" parent="xianyin" align="left" x="310" y="-125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D35_2.png);" onout="set(url,D35_1.png);" />
+
+<plugin name="d36" url="D36_1.png" keep="true" parent="xianyin" align="left" x="310" y="-100" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D36_2.png);" onout="set(url,D36_1.png);" />
+
+<plugin name="d37" url="D37_1.png" keep="true" parent="xianyin" align="left" x="310" y="-75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D37_2.png);" onout="set(url,D37_1.png);" />
+
+<plugin name="d38" url="D38_1.png" keep="true" parent="xianyin" align="left" x="310" y="-50" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D38_2.png);" onout="set(url,D38_1.png);" />
+
+<plugin name="d39" url="D39_1.png" keep="true" parent="xianyin" align="left" x="310" y="-25" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D39_2.png);" onout="set(url,D39_1.png);" />
+
+<plugin name="d40" url="D40_1.png" keep="true" parent="xianyin" align="left" x="310" y="0" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D40_2.png);" onout="set(url,D40_1.png);" />
+
+<plugin name="d41" url="D41_1.png" keep="true" parent="xianyin" align="left" x="310" y="25" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D41_2.png);" onout="set(url,D41_1.png);" />
+
+<plugin name="d42" url="D42_1.png" keep="true" parent="xianyin" align="left" x="310" y="50" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D42_2.png);" onout="set(url,D42_1.png);" />
+
+<plugin name="d43" url="D43_1.png" keep="true" parent="xianyin" align="left" x="310" y="75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D43_2.png);" onout="set(url,D43_1.png);" />
+
+<plugin name="d44" url="D44_1.png" keep="true" parent="xianyin" align="left" x="310" y="100" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D44_2.png);" onout="set(url,D44_1.png);" />
+
+<plugin name="d45" url="D45_1.png" keep="true" parent="xianyin" align="left" x="310" y="125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D45_2.png);" onout="set(url,D45_1.png);" />
+
+<plugin name="d46" url="D46_1.png" keep="true" parent="xianyin" align="left" x="310" y="150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D46_2.png);" onout="set(url,D46_1.png);" />
+
+<plugin name="d47" url="D47_1.png" keep="true" parent="xianyin" align="left" x="310" y="175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D47_2.png);" onout="set(url,D47_1.png);" />
+
+<plugin name="d48" url="D48_1.png" keep="true" parent="xianyin" align="left" x="310" y="200" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D48_2.png);" onout="set(url,D48_1.png);" />	
+	
+	
+	
+<plugin name="d49" url="D49_1.png" keep="true" parent="xianyin" align="left" x="465" y="-175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D49_2.png);" onout="set(url,D49_1.png);" />
+
+
+  <plugin name="d50" url="D50_1.png" keep="true" parent="xianyin" align="left" x="465" y="-150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D50_2.png);" onout="set(url,D50_1.png);" />
+
+<plugin name="d51" url="D51_1.png" keep="true" parent="xianyin" align="left" x="465" y="-125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D51_2.png);" onout="set(url,D51_1.png);" />
+
+<plugin name="d52" url="D52_1.png" keep="true" parent="xianyin" align="left" x="465" y="-100" onclick="set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D52_2.png);" onout="set(url,D52_1.png);" />
+
+<plugin name="d53" url="D53_1.png" keep="true" parent="xianyin" align="left" x="465" y="-75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D53_2.png);" onout="set(url,D53_1.png);" />
+
+<plugin name="d54" url="D54_1.png" keep="true" parent="xianyin" align="left" x="465" y="-50" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D54_2.png);" onout="set(url,D54_1.png);" />
+
+<plugin name="d55" url="D55_1.png" keep="true" parent="xianyin" align="left" x="465" y="-25" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D55_2.png);" onout="set(url,D55_1.png);" />
+
+<plugin name="d56" url="D56_1.png" keep="true" parent="xianyin" align="left" x="465" y="0" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D56_2.png);" onout="set(url,D56_1.png);" />
+
+<plugin name="d57" url="D57_1.png" keep="true" parent="xianyin" align="left" x="465" y="25" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D57_2.png);" onout="set(url,D57_1.png);" />
+
+<plugin name="d58" url="D58_1.png" keep="true" parent="xianyin" align="left" x="465" y="50" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D58_2.png);" onout="set(url,D58_1.png);" />
+
+<plugin name="d59" url="D59_1.png" keep="true" parent="xianyin" align="left" x="465" y="75" handcursor="true" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D59_2.png);" onout="set(url,D59_1.png);" />
+
+<plugin name="d60" url="D60_1.png" keep="true" parent="xianyin" align="left" x="465" y="100" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D60_2.png);" onout="set(url,D60_1.png);" />
+
+<plugin name="d61" url="D61_1.png" keep="true" parent="xianyin" align="left" x="465" y="125" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D61_2.png);" onout="set(url,D61_1.png);" />
+
+<plugin name="d62" url="D62_1.png" keep="true" parent="xianyin" align="left" x="465" y="150" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D62_2.png);" onout="set(url,D62_1.png);" />
+
+<plugin name="d63" url="D63_1.png" keep="true" parent="xianyin" align="left" x="465" y="175" onclick=" set(plugin[xianyin].visible,false);  set(plugin[caidan].alpha,1); " onhover="set(url,D63_2.png);" onout="set(url,D63_1.png);" />
+
+	
+	
+	
+	
+</krpano>

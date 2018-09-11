@@ -1,0 +1,109 @@
+    //
+//  PanoIconDownloader.m
+//  BeiJing360
+//
+//  Created by baobin on 11-6-3.
+//  Copyright 2011 __ChuangYiFengTong__. All rights reserved.
+//
+
+
+#import "PanoIconDownloader.h"
+#import "PanoAppRecord.h"
+
+#define kAppIconHeight 104
+#define kAppIconWidth 140
+
+
+@implementation PanoIconDownloader
+
+@synthesize appRecordPano;
+@synthesize indexPathInTableViewPano;
+@synthesize delegate;
+@synthesize activeDownloadPano;
+@synthesize imageConnectionPano;
+
+#pragma mark
+
+- (void)dealloc
+{
+    [appRecordPano release];
+    [indexPathInTableViewPano release];
+    
+    [activeDownloadPano release];
+    
+    //[imageConnectionPano cancel];
+    [imageConnectionPano release];
+    [super dealloc];
+}
+
+- (void)startDownloadPano
+{
+	
+    self.activeDownloadPano = [NSMutableData data];
+    // alloc+init and start an NSURLConnection; release on completion/failure
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:
+                             [NSURLRequest requestWithURL:
+                              [NSURL URLWithString:appRecordPano.imageURLString]] delegate:self];
+    self.imageConnectionPano = conn;
+    [conn release];
+}
+
+- (void)cancelDownloadPano
+{
+	
+    [self.imageConnectionPano cancel];
+    self.imageConnectionPano = nil;
+    self.activeDownloadPano = nil;
+}
+
+
+#pragma mark -
+#pragma mark Download support (NSURLConnectionDelegate)
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+	
+    [self.activeDownloadPano appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+	// Clear the activeDownload property to allow later attempts
+    self.activeDownloadPano = nil;
+    
+    // Release the connection now that it's finished
+    self.imageConnectionPano = nil;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+	
+    // Set appIcon and clear temporary data/image
+    UIImage *image = [[UIImage alloc] initWithData:self.activeDownloadPano];
+    
+    if (image.size.width != kAppIconWidth && image.size.height != kAppIconHeight)
+	{
+        CGSize itemSize = CGSizeMake(kAppIconWidth, kAppIconHeight);
+		UIGraphicsBeginImageContext(itemSize);
+		CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+		[image drawInRect:imageRect];
+		self.appRecordPano.appIconPano = UIGraphicsGetImageFromCurrentImageContext();
+		UIGraphicsEndImageContext();
+    }
+    else
+    {
+        self.appRecordPano.appIconPano = image;
+    }
+    
+    self.activeDownloadPano = nil;
+    [image release];
+    
+    // Release the connection now that it's finished
+    self.imageConnectionPano = nil;
+	
+    // call our delegate and tell it that our icon is ready for display
+    [delegate appImageDidLoadPano:self.indexPathInTableViewPano];
+}
+
+@end
+

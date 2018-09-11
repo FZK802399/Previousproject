@@ -1,0 +1,63 @@
+[
+
+	{
+		"id" : 1,
+		"title_en" : "Crenel",
+        "title_cn" : "垛口",
+        "info_cn" : "在墙顶外侧的迎敌方向，修筑有两米高的齿形垛口，是战斗人员了望敌情、射击敌人时掩护自己时所用。垛口的具体构造是：从墙上地坪开始砌至人体胸腹部高度时，再开始砌筑垛口。垛口一般砌筑成矩形。垛口上部砌有一个小方洞即了望洞。了望洞的左右侧面砖呈内外八字形，这是为了便于了望敌人，又不易被敌箭射中。下部砌有一个小方洞，是张弓发箭的射孔。射孔底面向下倾，便于向城下射击敌人。",
+		"info_en" : "On the defensive side of the Great Wall, crenels were built to watch the enemy and discharge the arrows. The battlement comprises of a chest-height parapet and rectangular crenel or indentations.  The small square holes on the top of the crenels were opened for watching , while the holes on the bottom for the arrows.  The arrow holes are downward sloping which made it easier to aim at the enemy soldiers.",
+		"sound_cn" : "sounden.mp3",
+		"sound_en" : "soundcn.mp3"
+	},
+	{
+		"id" : 2,
+		"title_en" : "Cannon",
+        "title_cn" : "古炮",
+        "info_cn" : "铁炮，为明代的先进武器之一。1957年整修长城时出土众多文物的同时，还发掘出数百枚炮弹，均为明朝制品。据《武备志》记载：“古代以机发石，其机之木架,形如虎蹲。后来使用火炮，炮身短而粗大，以发开花弹者，名虎蹲炮，俗称田鸡炮”，由此，当时武器的情况可见一斑。",
+		"info_en" : "As one of the advanced weapons in Ming Dynasty, Iron cannons played an active role in ancient wars. Hundreds of cannon balls were unearthed together with other relics when the Great Wall was renovated in 1957. In ancient time stones were fired by machines which looked like crouching tiger. Later the bulky cannons came into use. The cannons which fired the exploding balls were called tiger-crouching cannons or frog cannons.",
+		"sound_cn" : "",
+		"sound_en" : ""
+	},
+
+	{
+		"id" : 3,
+		"title_en" : "Parapet",
+        "title_cn" : "内墙",
+        "info_cn" : "内墙又名宇墙或女儿墙，高约1米，它起着栏杆的作用，可以防止人和车马等从墙顶上坠落。垛墙和宇墙都用城砖砌成，墙顶用一层脊砖，脊砖是专门烧制的，也有的是在施工时用泥刀砍制而成。脊砖两边低中间高，或内侧高外侧低，便于排水。城墙顶部形成有墙的巷道，在两边墙根砌有小水槽，积水沿水槽流到较低处的宇墙下部，经出水孔把水引至墙外的吐水嘴上，泻流城墙外。",
+		"info_en" : "The parapet of the Great Wall is roughly one meter high.  It prevents people, horses and carriages from falling down from the Great Wall. All the parapets and the crenels were built with wall bricks. The ridges were usually made of special bricks, or bricks cut with trowels.  Ridge tiles are either low on the sides and high in the middle, or low on the outside but high on the inside to drain away the water. Water channels were built along the foot of the walls, they lead the water to the faucets at intervals.",
+		"sound_cn" : "",
+		"sound_en" : ""
+	},
+
+	{
+		"id" : 4,
+		"title_en" : "Arch",
+        "title_cn" : "券洞",
+        "info_cn" : "券洞又称拱券，它除了竖向荷重时具有良好的承重特性外，还起着装饰美化的作用。其外形为圆弧状，由于各种建筑类型的不同，拱券的形式略有变化。",
+		"info_en" : "The arches on the Great Wall have particular load-bearing advantages as well as decorative effects. They are all arc-shaped with various details in light of different building types.",
+		"sound_cn" : "",
+		"sound_en" : ""
+	},
+
+	{
+		"id" : 5,
+		"title_en" : "Shooting Holes",
+        "title_cn" : "射洞",
+        "info_cn" : "垛口下侧开一小洞，叫射洞，用于射箭。洞口可以射弩或火器，射箭需要一定活动空间，而且瞄准线和出箭线距离远，所以在垛子和垛子之间射。",
+		"info_en" : "Shooting holes are opened below the crenels for discharging the arrows. cross - bow ad guns can also be used here. Usually shooting an arrow requires room to stretch and aim, so it is also done between the crenels.",
+		"sound_cn" : "",
+		"sound_en" : ""
+	},
+
+	{
+		"id" : 6,
+		"title_en" : "Fort",
+        "title_cn" : "外墙",
+        "info_cn" : "外墙又名垛墙，为迎敌面，墙高1.7～2米，便于掩护人体，一般在人体胸部高度开始筑垛口，垛口之间距离约1米。垛口的砖是特制的，一边为斜边，码在口上，呈扇面状，外宽内窄，观察面大。挡垛上部设有瞭望孔，墙下部砌有射孔，用以射箭投石。部分射孔和瞭望孔的砖面上雕有图案花纹。垛墙，除了有防止车马坠落这个次要功能外，最主要的是它提供了瞭望、射击的垛口和用于掩护身体的墙体，可以分别用来进攻和防御。",
+		"info_en" : "The wall towards the enemy is called the fort. The fort wall is 1.7 to 2 meters high to cover the soldiers, and the crenels were opened at the hight of human chest and one meter apart from each other. They are made of special bricks with inclines to ensure larger visual angle. The observation and shooting holes can also be found easily on the wall. Some of the holes are decorated with patterns. The forts not only protect the carriages from falling, but also provide the facility for watching, firing and covering during attack and defence.",
+		"sound_cn" : "",
+		"sound_en" : ""
+	}
+
+
+]

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FXCell" rowHeight="61" id="KGk-i7-Jjw" customClass="FXCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nopic" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-nH-b8O">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="4nf-C4-xAe"/>
+                            <constraint firstAttribute="width" constant="60" id="93V-07-tHj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="糖糖" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx8-Sn-qNq">
+                        <rect key="frame" x="76" y="11" width="30" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总盈利" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXR-sX-0ci">
+                        <rect key="frame" x="76" y="47" width="39" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AU$1115.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWs-1J-EMc">
+                        <rect key="frame" x="123" y="47" width="56" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.66316267637291337" blue="0.00020300987418889912" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mLL-nH-b8O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BC8-Cz-6J4"/>
+                    <constraint firstAttribute="bottom" secondItem="eXR-sX-0ci" secondAttribute="bottom" constant="12" id="FBS-nZ-Rrj"/>
+                    <constraint firstItem="gx8-Sn-qNq" firstAttribute="leading" secondItem="mLL-nH-b8O" secondAttribute="trailing" constant="8" id="FRh-Ll-5gP"/>
+                    <constraint firstItem="mLL-nH-b8O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="abM-ie-yv0"/>
+                    <constraint firstAttribute="bottom" secondItem="EWs-1J-EMc" secondAttribute="bottom" constant="12" id="ntc-TG-h1u"/>
+                    <constraint firstItem="gx8-Sn-qNq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="rED-Tf-Ydf"/>
+                    <constraint firstItem="EWs-1J-EMc" firstAttribute="leading" secondItem="eXR-sX-0ci" secondAttribute="trailing" constant="8" id="uaU-a3-55B"/>
+                    <constraint firstItem="eXR-sX-0ci" firstAttribute="leading" secondItem="mLL-nH-b8O" secondAttribute="trailing" constant="8" id="yKL-MU-7O0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="mLL-nH-b8O" id="wv7-GM-pbJ"/>
+                <outlet property="name" destination="gx8-Sn-qNq" id="aZ7-UM-oF1"/>
+                <outlet property="price" destination="EWs-1J-EMc" id="pa4-qe-Jgf"/>
+            </connections>
+            <point key="canvasLocation" x="457" y="374"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nopic" width="180" height="214"/>
+    </resources>
+</document>

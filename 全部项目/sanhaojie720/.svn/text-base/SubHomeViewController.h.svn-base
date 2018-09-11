@@ -1,0 +1,77 @@
+//
+//  SubHomeViewController.h
+//  BeiJing360
+//
+//  Created by baobin on 11-5-23.
+//  Copyright 2011 __ChuangYiFengTong__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "IconDownloader.h"
+#import "AppRecord.h"
+#import "ParseOperation.h"
+//#import "CustomViewCell.h"
+#import "ApplicationCell.h"
+
+@class SubHomeDetailViewController;
+
+
+@interface SubHomeViewController : UIViewController 
+<UIScrollViewDelegate, IconDownloaderDelegate, UITableViewDelegate, UITableViewDataSource, ParseOperationDelegate> {
+
+	IBOutlet UITableView	*placesOfInterestViewController;
+	IBOutlet UITableView	*parkPlaceViewController;
+	IBOutlet UITableView	*beijingLocationViewController;
+	IBOutlet UITableView	*cultureCustomsViewController;
+	IBOutlet UITableView	*museumViewController;
+	IBOutlet UITableView	*suburbSceneryViewController;
+	IBOutlet UITableView	*alleyStreetscapeViewController;
+	IBOutlet UITableView	*shoppingCenterViewController;
+	IBOutlet UITableView	*barViewController;
+	
+	SubHomeDetailViewController    *placesOfInterestDetailViewController, *parkPlaceDetailViewController, *beijingLocationDetailViewController,
+									*cultureCustomsDetailViewController, *museumDetailViewController, *suburbSceneryDetailViewController,
+									*alleyStreetscapeDetailViewController, *shoppingCenterDetailViewController, *barDetailViewController;
+	
+	NSArray *entries;   
+    NSMutableDictionary		*imageDownloadsInProgress; 
+	NSMutableArray          *appRecords;
+    NSOperationQueue		*queue;
+    NSURLConnection         *appListFeedConnection;
+    NSMutableData           *appListData;
+	NSArray					*visblePaths;
+	
+	NSInteger				 whichView;
+	ApplicationCell			*cellDisplay;
+	UINib					*cellNib;
+}
+
+@property (nonatomic, retain) UITableView			*placesOfInterestViewController;
+@property (nonatomic, retain) UITableView			*parkPlaceViewController;
+@property (nonatomic, retain) UITableView			*beijingLocationViewController;
+@property (nonatomic, retain) UITableView			*cultureCustomsViewController;
+@property (nonatomic, retain) UITableView			*museumViewController;
+@property (nonatomic, retain) UITableView			*suburbSceneryViewController;
+@property (nonatomic, retain) UITableView			*alleyStreetscapeViewController;
+@property (nonatomic, retain) UITableView			*shoppingCenterViewController;
+@property (nonatomic, retain) UITableView			*barViewController;
+
+@property (nonatomic, retain) SubHomeDetailViewController    *placesOfInterestDetailViewController, *parkPlaceDetailViewController, *beijingLocationDetailViewController,
+															*cultureCustomsDetailViewController, *museumDetailViewController, *suburbSceneryDetailViewController,
+																*alleyStreetscapeDetailViewController, *shoppingCenterDetailViewController, *barDetailViewController;
+
+@property (nonatomic, retain) NSArray				*entries;
+@property (nonatomic, retain) NSMutableDictionary	*imageDownloadsInProgress;
+@property (nonatomic, retain) NSMutableArray		*appRecords;
+@property (nonatomic, retain) NSOperationQueue		*queue;
+@property (nonatomic, retain) NSURLConnection		*appListFeedConnection;
+@property (nonatomic, retain) NSMutableData			*appListData;
+@property (nonatomic)		  NSInteger				whichView;
+@property (nonatomic, retain) NSArray				*visblePaths;
+
+@property (nonatomic, retain) IBOutlet ApplicationCell		*cellDisplay;
+@property (nonatomic, retain) UINib					*cellNib;
+
+- (void)appImageDidLoad:(NSIndexPath *)indexPath;
+
+@end

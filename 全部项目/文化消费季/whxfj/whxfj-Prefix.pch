@@ -1,0 +1,40 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #define isIos7System [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
+    //定义微信的appID 以及跳转地址url
+    #define kWXAppID @"wxae1c000000"
+    #define kWXRedirectUrl @"https://itunes.apple.com/cn/app/wei-zhu-ye-fen-xiang-li-qi/id782155327?mt=8"
+
+    //定义QQ的appID
+    #define kQQAppID @"222222"
+
+    //新浪微博
+    #define SOCIAL_SHARE_PLATFORM_SINAWEIBO @"sinaweibo"
+    //腾讯微博
+    #define SOCIAL_SHARE_PLATFORM_TENCENTWEIBO @"tencentweibo"
+    //微信好友
+    #define SOCIAL_SHARE_PLATFORM_WEIXIN @"weixinfriend"
+    //微信朋友圈
+    #define SOCIAL_SHARE_PLATFORM_WEIXIN_TIMELINE @"weixintimeline"
+    //QQ
+    #define SOCIAL_SHARE_PLATFORM_QQ @"qq"
+    //邮件
+    #define SOCIAL_SHARE_PLATFORM_EMAIL @"email"
+    //短信
+    #define SOCIAL_SHARE_PLATFORM_SMS @"sms"
+    //复制链接
+    #define SOCIAL_SHARE_PLATFORM_COPY @"copy"
+#endif

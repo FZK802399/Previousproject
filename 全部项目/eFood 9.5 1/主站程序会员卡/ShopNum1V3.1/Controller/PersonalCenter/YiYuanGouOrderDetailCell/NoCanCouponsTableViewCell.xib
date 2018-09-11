@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NoCanCouponsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noCanCoupons" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-du-zah">
+                        <rect key="frame" x="50" y="0.0" width="275" height="84"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIg-Yz-uX5">
+                        <rect key="frame" x="67" y="15" width="85" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="OZy-h5-kqT"/>
+                            <constraint firstAttribute="height" constant="40" id="yPL-FU-8Sz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="澳元优惠券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-Rt-NZq">
+                        <rect key="frame" x="155" y="27" width="120" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Azk-ed-Vs8"/>
+                            <constraint firstAttribute="height" constant="25" id="qTt-Ip-Jzb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用期限：2017-07-20 00：00：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-aX-lI7">
+                        <rect key="frame" x="75" y="60" width="180" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PQV-bg-zuJ"/>
+                            <constraint firstAttribute="width" constant="180" id="g2s-kG-VBE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="满500澳元即可使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZT-1u-FI4">
+                        <rect key="frame" x="155" y="10" width="130" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="EbO-Dd-Rpw"/>
+                            <constraint firstAttribute="height" constant="15" id="wpU-sp-iDC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jgG-du-zah" secondAttribute="trailing" constant="50" id="1Kt-v9-crY"/>
+                    <constraint firstAttribute="bottom" secondItem="jgG-du-zah" secondAttribute="bottom" constant="5" id="Jpm-Bl-nz8"/>
+                    <constraint firstItem="sIg-Yz-uX5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="67" id="L2I-8N-jEL"/>
+                    <constraint firstItem="jgG-du-zah" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="T2J-rH-kG1"/>
+                    <constraint firstItem="pZT-1u-FI4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="f3W-l7-JX8"/>
+                    <constraint firstItem="jgG-du-zah" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="hmP-Ua-KEN"/>
+                    <constraint firstItem="B9f-aX-lI7" firstAttribute="top" secondItem="sIg-Yz-uX5" secondAttribute="bottom" constant="5" id="k3L-eh-p47"/>
+                    <constraint firstItem="B9f-aX-lI7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="75" id="lAI-Dh-EdC"/>
+                    <constraint firstItem="gh2-Rt-NZq" firstAttribute="top" secondItem="pZT-1u-FI4" secondAttribute="bottom" constant="2" id="nOW-o0-PaG"/>
+                    <constraint firstItem="pZT-1u-FI4" firstAttribute="leading" secondItem="sIg-Yz-uX5" secondAttribute="trailing" constant="3" id="o3k-Md-CSG"/>
+                    <constraint firstItem="gh2-Rt-NZq" firstAttribute="leading" secondItem="sIg-Yz-uX5" secondAttribute="trailing" constant="3" id="vmr-YN-Zyg"/>
+                    <constraint firstItem="sIg-Yz-uX5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="wvl-me-O8v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImage" destination="jgG-du-zah" id="kvg-bd-haL"/>
+                <outlet property="couponsLabel" destination="gh2-Rt-NZq" id="o7X-CJ-MYm"/>
+                <outlet property="moneyLabel" destination="sIg-Yz-uX5" id="02E-ud-6Ps"/>
+                <outlet property="moneyMakeLabel" destination="pZT-1u-FI4" id="tVD-Lw-cPM"/>
+                <outlet property="timeLabel" destination="B9f-aX-lI7" id="McJ-2h-Lob"/>
+            </connections>
+            <point key="canvasLocation" x="432.5" y="318"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noCanCoupons" width="544" height="160"/>
+    </resources>
+</document>

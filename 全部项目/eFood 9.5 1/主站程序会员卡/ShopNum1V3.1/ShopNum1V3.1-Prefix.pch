@@ -1,0 +1,57 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import "ShopNum1.h"
+#endif
+#import "MJExtension.h"
+#import "UIViewController+leftBarItem.h"
+
+/**
+ *  宏 沙盒路径 ：拼接
+ */
+#define LZDocumentWithFileName(fileName) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileName]
+///   屏幕大小边界
+#define LZScreenBounds [[UIScreen mainScreen] bounds]
+///   屏幕宽度
+#define LZScreenWidth [UIScreen mainScreen].bounds.size.width
+///   屏幕高度
+#define LZScreenHeight [UIScreen mainScreen].bounds.size.height
+///   RGBA颜色
+#define RGBA(R,G,B,A) [UIColor colorWithRed:(R)/255.0f green:(G)/255.0f blue:(B)/255.0f alpha:(A)]
+///   RGB颜色
+#define RGB(R,G,B) [UIColor colorWithRed:(R)/255.0f green:(G)/255.0f blue:(B)/255.0f alpha:1]
+///   系统版本号
+#define LZCurrentSystemVersion ([[[UIDevice currentDevice] systemVersion] floatValue])
+///   按钮 监听 事件
+#define LZButtonAddAction(BUTTON,SELECTOR)  [BUTTON addTarget:self action:SELECTOR forControlEvents:UIControlEventTouchUpInside]
+///  一个像素
+#define LZPixelWidth (1 / [UIScreen mainScreen].scale) //如果高分辨设备得到0.5f，低分辨率设备得到1.0f, 修改：如果是3倍屏返回1/3，如果是2倍屏返回1/2，如果是单倍屏返回1
+
+/**
+ *  自定义NSLog
+ *
+ *  @param ... 像NSLog一样 用法
+ */
+#ifdef DEBUG
+#define LZLOG(...) NSLog(__VA_ARGS__)
+#define LZShowMethod NSLog(@"%@",NSStringFromSelector(_cmd))
+#define LZCFShow(object) CFShow(CFBridgingRetain(object))
+#else
+#define LZLOG(...)
+#define LZShowMethod
+#define LZCFShow(object)
+#endif
+

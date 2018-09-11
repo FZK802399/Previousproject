@@ -1,0 +1,731 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/beijing720/!svn/ver/162/trunk/BeiJing360_cn
+END
+SubAppRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/16/trunk/BeiJing360_cn/SubAppRecord.h
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/main.m
+END
+MapGuideViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/beijing720/!svn/ver/83/trunk/BeiJing360_cn/MapGuideViewController.h
+END
+HomeContext.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/HomeContext.png
+END
+ParkPlaceViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/ParkPlaceViewController.xib
+END
+PanoAppRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/PanoAppRecord.h
+END
+CurrentMapGuideViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/CurrentMapGuideViewController.h
+END
+virtualTour.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/virtualTour.png
+END
+SubAppRecord.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/16/trunk/BeiJing360_cn/SubAppRecord.m
+END
+MapGuideViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/beijing720/!svn/ver/83/trunk/BeiJing360_cn/MapGuideViewController.m
+END
+Global.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/Global.h
+END
+BeiJing360_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/beijing720/!svn/ver/36/trunk/BeiJing360_cn/BeiJing360_Prefix.pch
+END
+PanoAppRecord.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/PanoAppRecord.m
+END
+CurrentMapGuideViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/CurrentMapGuideViewController.m
+END
+MuseumViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/MuseumViewController.xib
+END
+CustomMorePanoViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomMorePanoViewCell.h
+END
+CustomMorePanoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomMorePanoViewController.h
+END
+CustomMorePanoViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomMorePanoViewCell.m
+END
+CustomMorePanoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomMorePanoViewController.m
+END
+BarDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BarDetailViewController.xib
+END
+ShoppingCenterViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/ShoppingCenterViewController.xib
+END
+MorePanoramaTable.xib
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/MorePanoramaTable.xib
+END
+SubHomeDetailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/SubHomeDetailViewController.h
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/beijing720/!svn/ver/36/trunk/BeiJing360_cn/icon.png
+END
+HomeViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/HomeViewController.h
+END
+PlacesOfInterestDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/PlacesOfInterestDetailViewController.xib
+END
+SubHomeDetailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/beijing720/!svn/ver/162/trunk/BeiJing360_cn/SubHomeDetailViewController.m
+END
+HomeViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/HomeViewController.m
+END
+homeButtonImageHighlight_1.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_1.png
+END
+homeButtonImageHighlight_2.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_2.png
+END
+homeButtonImageHighlight_3.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_3.png
+END
+homeButtonImageHighlight_4.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_4.png
+END
+homeButtonImageHighlight_5.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_5.png
+END
+ShareViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/ShareViewController.h
+END
+SubHomeViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/SubHomeViewController.h
+END
+homeButtonImageHighlight_6.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_6.png
+END
+homeButtonImageHighlight_7.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_7.png
+END
+homeButtonImageHighlight_8.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_8.png
+END
+homeButtonImageHighlight_9.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImageHighlight_9.png
+END
+PeripheryBusinessDetailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/PeripheryBusinessDetailViewController.h
+END
+ShareViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/ShareViewController.m
+END
+SubHomeViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/SubHomeViewController.m
+END
+PeripheryBusinessDetailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/PeripheryBusinessDetailViewController.m
+END
+Image.xib
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/Image.xib
+END
+AppRecordBusinessDetail.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/AppRecordBusinessDetail.h
+END
+AppRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/AppRecord.h
+END
+ParkPlaceDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/ParkPlaceDetailViewController.xib
+END
+AppRecordBusinessDetail.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/AppRecordBusinessDetail.m
+END
+AppRecord.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/AppRecord.m
+END
+BeiJing360ViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BeiJing360ViewController.xib
+END
+BeijingLocationViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/BeijingLocationViewController.xib
+END
+ParseOperationBusinessDetail.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/beijing720/!svn/ver/11/trunk/BeiJing360_cn/ParseOperationBusinessDetail.h
+END
+BusinessAppRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BusinessAppRecord.h
+END
+ParseOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/beijing720/!svn/ver/11/trunk/BeiJing360_cn/ParseOperation.h
+END
+SuburbScenery.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/SuburbScenery.h
+END
+BeiJing360-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/beijing720/!svn/ver/132/trunk/BeiJing360_cn/BeiJing360-Info.plist
+END
+ParseOperationBusinessDetail.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/ParseOperationBusinessDetail.m
+END
+CustomViewCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/CustomViewCell.xib
+END
+BusinessAppRecord.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BusinessAppRecord.m
+END
+ParseOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/ParseOperation.m
+END
+SuburbScenery.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/SuburbScenery.m
+END
+CustomMorePanoViewCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/CustomMorePanoViewCell.xib
+END
+CurrentVirtualTourViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CurrentVirtualTourViewController.h
+END
+homeButtonImage_1.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_1.png
+END
+CustomViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomViewCell.h
+END
+ShoppingCenterDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/ShoppingCenterDetailViewController.xib
+END
+SubParseOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/11/trunk/BeiJing360_cn/SubParseOperation.h
+END
+homeButtonImage_2.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_2.png
+END
+homeButtonImage_3.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_3.png
+END
+MainWindow.xib
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/MainWindow.xib
+END
+IconDownloader.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/IconDownloader.h
+END
+BusinessParseOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/beijing720/!svn/ver/11/trunk/BeiJing360_cn/BusinessParseOperation.h
+END
+CurrentVirtualTourViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CurrentVirtualTourViewController.m
+END
+homeButtonImage_4.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_4.png
+END
+placesOfInterest.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/placesOfInterest.png
+END
+SuburbSceneryDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/SuburbSceneryDetailViewController.xib
+END
+homeButtonImage_5.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_5.png
+END
+PanoParseOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/11/trunk/BeiJing360_cn/PanoParseOperation.h
+END
+AboutViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/beijing720/!svn/ver/132/trunk/BeiJing360_cn/AboutViewController.h
+END
+homeButtonImage_6.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_6.png
+END
+CustomViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomViewCell.m
+END
+SubParseOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/50/trunk/BeiJing360_cn/SubParseOperation.m
+END
+TextViewCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/TextViewCell.xib
+END
+homeButtonImage_7.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_7.png
+END
+homeButtonImage_8.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_8.png
+END
+IconDownloader.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/IconDownloader.m
+END
+BusinessParseOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/BusinessParseOperation.m
+END
+homeButtonImage_9.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/homeButtonImage_9.png
+END
+AboutViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/beijing720/!svn/ver/132/trunk/BeiJing360_cn/AboutViewController.m
+END
+CultureCustomsDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CultureCustomsDetailViewController.xib
+END
+PanoParseOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/beijing720/!svn/ver/36/trunk/BeiJing360_cn/PanoParseOperation.m
+END
+Placeholder.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/Placeholder.png
+END
+ImagePeripheryBusiness.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/ImagePeripheryBusiness.xib
+END
+BusinessIconDownloader.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BusinessIconDownloader.h
+END
+PanoIconDownloader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/PanoIconDownloader.h
+END
+SuburbSceneryViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/SuburbSceneryViewController.xib
+END
+AlleyStreetscapeDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/AlleyStreetscapeDetailViewController.xib
+END
+PeripheryBusinessTable.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/PeripheryBusinessTable.xib
+END
+home_update.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/home_update.png
+END
+BusinessIconDownloader.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BusinessIconDownloader.m
+END
+mapGuide.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/mapGuide.png
+END
+PanoIconDownloader.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/PanoIconDownloader.m
+END
+CultureCustomsViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/CultureCustomsViewController.xib
+END
+BarViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/BarViewController.xib
+END
+AlleyStreetscapeViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/AlleyStreetscapeViewController.xib
+END
+PlacesOfInterestViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/PlacesOfInterestViewController.xib
+END
+MySingleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/beijing720/!svn/ver/83/trunk/BeiJing360_cn/MySingleton.h
+END
+VirtualTourismViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/VirtualTourismViewController.h
+END
+CustomCellViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomCellViewController.h
+END
+PeripheryBusinessDetailTable.xib
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/PeripheryBusinessDetailTable.xib
+END
+MySingleton.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/beijing720/!svn/ver/83/trunk/BeiJing360_cn/MySingleton.m
+END
+BeijingLocationDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/BeijingLocationDetailViewController.xib
+END
+VirtualTourismViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/VirtualTourismViewController.m
+END
+CustomCellViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/CustomCellViewController.m
+END
+MorePanoramaViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/MorePanoramaViewController.h
+END
+Default.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/Default.png
+END
+PeripheryBusinessViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/beijing720/!svn/ver/129/trunk/BeiJing360_cn/PeripheryBusinessViewController.h
+END
+MorePanoramaViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/beijing720/!svn/ver/16/trunk/BeiJing360_cn/MorePanoramaViewController.m
+END
+720a_logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/720a_logo.png
+END
+PeripheryBusinessViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/beijing720/!svn/ver/130/trunk/BeiJing360_cn/PeripheryBusinessViewController.m
+END
+MuseumDetailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/beijing720/!svn/ver/5/trunk/BeiJing360_cn/MuseumDetailViewController.xib
+END

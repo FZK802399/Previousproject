@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RefundCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="买多了/买错了" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fs-ja-PJC">
+                        <rect key="frame" x="15" y="0.0" width="96" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hv-ew-HyL">
+                        <rect key="frame" x="362" y="11" width="20" height="22"/>
+                        <state key="normal" image="checkbox_off">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="checkbox_on"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nZ-Mm-LYl">
+                        <rect key="frame" x="0.0" y="44" width="390" height="0.0"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="odj-cb-2rl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="7Hv-ew-HyL" secondAttribute="centerY" id="4TH-2f-vYc"/>
+                    <constraint firstItem="5fs-ja-PJC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HxH-CY-YFC"/>
+                    <constraint firstItem="5fs-ja-PJC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JLj-oG-8S5"/>
+                    <constraint firstItem="1nZ-Mm-LYl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LWR-lT-8zo"/>
+                    <constraint firstAttribute="trailing" secondItem="1nZ-Mm-LYl" secondAttribute="trailing" id="NAl-Cd-Rno"/>
+                    <constraint firstAttribute="bottom" secondItem="5fs-ja-PJC" secondAttribute="bottom" id="VqE-1L-fYR"/>
+                    <constraint firstAttribute="bottom" secondItem="1nZ-Mm-LYl" secondAttribute="bottom" id="dfd-oB-1mS"/>
+                    <constraint firstAttribute="trailing" secondItem="7Hv-ew-HyL" secondAttribute="trailing" constant="8" id="icS-YD-IvS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="7Hv-ew-HyL" id="Z1h-Em-08h"/>
+                <outlet property="reason" destination="5fs-ja-PJC" id="boM-Jz-LSL"/>
+            </connections>
+            <point key="canvasLocation" x="1083" y="452.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_off" width="20" height="20"/>
+        <image name="checkbox_on" width="20" height="20"/>
+    </resources>
+</document>

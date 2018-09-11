@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutAppController">
+            <connections>
+                <outlet property="build" destination="L0Z-zs-Y6J" id="6QY-2l-bha"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBl-11-Ub3">
+                    <rect key="frame" x="20" y="250" width="335" height="115"/>
+                    <string key="text">     EFOOD7是一个全球食品综合供应商，专注于健康、美味、原生态。为食品企业产品提供电商平台，为食品企业经营提供增值服务。我们作为澳大利亚最大的食品出口商之一，致力于服务中国消费者健康有机食品，以F2C的经营模式采用产地直营方式把在澳洲生产的产品通过跨境电商平台直接销售给消费者,让消费者获得更好的购物体验及售后服务，我们像珍惜眼睛一样确保每一件商品来自原产地，以真正的原装正品服务中国的消费者！</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="澳大利亚E FOOD7有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avH-9T-Qc7">
+                    <rect key="frame" x="30" y="620" width="315" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180" translatesAutoresizingMaskIntoConstraints="NO" id="njr-cK-i7x">
+                    <rect key="frame" x="137" y="100" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="HaN-He-Yxo"/>
+                        <constraint firstAttribute="height" constant="100" id="bju-ei-Hjj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="V1.0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0Z-zs-Y6J">
+                    <rect key="frame" x="168" y="593" width="41" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BBl-11-Ub3" firstAttribute="top" secondItem="njr-cK-i7x" secondAttribute="bottom" constant="50" id="2Ph-HL-0iK"/>
+                <constraint firstItem="avH-9T-Qc7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="6Aa-RL-Ee5"/>
+                <constraint firstItem="avH-9T-Qc7" firstAttribute="top" secondItem="L0Z-zs-Y6J" secondAttribute="bottom" constant="10" id="Lu6-ni-e6j"/>
+                <constraint firstAttribute="trailing" secondItem="avH-9T-Qc7" secondAttribute="trailing" constant="30" id="MLD-Gu-ojq"/>
+                <constraint firstAttribute="bottom" secondItem="avH-9T-Qc7" secondAttribute="bottom" constant="30" id="MYl-s7-H96"/>
+                <constraint firstAttribute="trailing" secondItem="BBl-11-Ub3" secondAttribute="trailing" constant="20" id="Tyj-dU-XRZ"/>
+                <constraint firstItem="njr-cK-i7x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="U9Q-Qb-b0t"/>
+                <constraint firstAttribute="centerX" secondItem="njr-cK-i7x" secondAttribute="centerX" id="UJO-kZ-i71"/>
+                <constraint firstAttribute="centerX" secondItem="L0Z-zs-Y6J" secondAttribute="centerX" id="mEP-8e-Yme"/>
+                <constraint firstItem="BBl-11-Ub3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="wOJ-HV-hID"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="593.5" y="328.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="180" width="180" height="180"/>
+    </resources>
+</document>

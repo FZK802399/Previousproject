@@ -1,0 +1,45 @@
+//
+//  MySingleton.h
+//  BeiJing360
+//
+//  Created by baobin on 11-6-1.
+//  Copyright 2011 __ChuangYiFengTong__. All rights reserved.
+//
+
+@interface MySingleton : NSObject
+{
+	NSString *subHomeDetailGlobal;
+	NSString *subHomeDetailVirtualTourURLString;	
+	NSString *morePanoramoURLString;
+	NSString *morePanoramoVirtualTourURLString;
+//	NSString *subHomeDetailMapURLString;
+	NSString *peripheryBusinessURLString;
+	NSString *peripheryBusinessDetailGlobal;
+	NSString *peripheryBusinessDidSelectRow;
+	NSString *peripheryBusinessMapDetailURLString;
+	
+	NSInteger currentFlagWithVirtualTour;
+	NSInteger currentFlagWithperipheryBusiness;
+	double_t currentLatitude;	//经度
+	double_t cureentLogitude;	//纬度
+	NSInteger	whichSubDetailView;
+}
+
++ (MySingleton *)sharedSingleton;
+@property (nonatomic, assign) double_t currentLatitude;
+@property (nonatomic, assign) double_t currentLogitude;
+@property (nonatomic, assign) NSInteger currentFlagWithVirtualTour;
+@property (nonatomic, assign) NSInteger currentFlagWithperipheryBusiness;
+@property (nonatomic, assign) NSInteger whichSubDetailView;
+
+@property (nonatomic, retain) NSString *subHomeDetailGlobal;
+@property (nonatomic, retain) NSString *subHomeDetailVirtualTourURLString;
+@property (nonatomic, retain) NSString *morePanoramoURLString;
+@property (nonatomic, retain) NSString *morePanoramoVirtualTourURLString;
+//@property (nonatomic, retain) NSString *subHomeDetailMapURLString;
+@property (nonatomic, retain) NSString *peripheryBusinessURLString;
+@property (nonatomic, retain) NSString *peripheryBusinessDetailGlobal;
+@property (nonatomic, retain) NSString *peripheryBusinessDidSelectRow;
+@property (nonatomic, retain) NSString *peripheryBusinessMapDetailURLString;
+
+@end

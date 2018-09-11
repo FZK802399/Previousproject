@@ -1,0 +1,39 @@
+//
+//  SubParseOperation.h
+//  BeiJing360
+//
+//  Created by baobin on 11-5-31.
+//  Copyright 2011 __ChuangYiFengTong__. All rights reserved.
+//
+
+@class SubAppRecord;
+
+//@protocol SubParseOperationDelegate;
+
+@protocol SubParseOperationDelegate
+
+- (void)didFinishParsingDetail:(NSArray *)appList;
+- (void)parseErrorOccurredDetail:(NSError *)error;
+
+@end
+
+
+@interface SubParseOperation : NSOperation <NSXMLParserDelegate> {
+	
+@private
+    id <SubParseOperationDelegate> delegate;
+    
+    NSData          *dataToParseDetail;
+    
+    NSMutableArray  *workingArrayDetail;
+    SubAppRecord    *workingEntryDetail;
+    NSMutableString *workingPropertyStringDetail;
+    NSArray         *elementsToParseDetail;
+    BOOL            storingCharacterDataDetail;
+	
+}
+
+- (id)initWithDataWithSubHomeDetail:(NSData *)data delegate:(id <SubParseOperationDelegate>)theDelegate;
+
+@end
+

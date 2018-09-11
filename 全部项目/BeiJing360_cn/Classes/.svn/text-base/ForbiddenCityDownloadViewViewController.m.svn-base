@@ -1,0 +1,261 @@
+//
+//  ForbiddenCityDownloadViewViewController.m
+//  BeiJing360
+//
+//  Created by Duke Douglas on 13-3-21.
+//  Copyright (c) 2013年 __ChuangYiFengTong__. All rights reserved.
+//
+
+#import "ForbiddenCityDownloadViewViewController.h"
+
+#define kPathOfHtml @"msgj_gugong_vtour/msgj_gugong_tour.html"
+
+#define kWidth self.view.bounds.size.width
+#define kHeight self.view.bounds.size.height
+#define kOffSet 380
+
+@interface ForbiddenCityDownloadViewViewController ()
+{
+    NSUInteger _totleSize;
+    
+    UIProgressView *_downloadProgressView;
+    UIActivityIndicatorView *_identifier;
+    UILabel *_totleDataLabel;
+    UILabel *_currentDataLabel;
+    UILabel *_downloadLabel;
+}
+
+@end
+
+@implementation ForbiddenCityDownloadViewViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor grayColor]];
+    [self setTitle:@"故宫全景"];
+    
+    //如果文件存在则直接展示，否则下载
+    if ([self downloadFileIsExist])  //文件存在
+    {
+        _isDownloaded = YES;
+        [self showView];
+    }
+    else    //文件不存在则下载
+    {
+        _isDownloaded = NO;
+        [self downloadRequest];
+    }
+    
+}
+
+#pragma mark - file is exist
+//下载的zip文件是否存在
+-(BOOL)downloadFileIsExist
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager fileExistsAtPath:[self downloadFilePath]];
+}
+//解压的文件是否存在
+- (BOOL)unarchiveFileIsExist
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager fileExistsAtPath:[self pathOfHtml]];
+}
+
+#pragma mark - download request
+//下载请求
+- (void)downloadRequest
+{
+    [self fileDownloadView];  //正在下载中的视图
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:kFORBIDDEN_CITY_DOWNLOAD_URL]];
+    [request setDownloadDestinationPath:[self downloadFilePath]];  //设置下载路径
+    [request setDownloadProgressDelegate:self];                    //设置进度条
+    [request setTemporaryFileDownloadPath:[self pathOfCache]];     //设置缓存路径
+    [request setAllowResumeForFileDownloads:YES];                  //允许断点续传
+    [request setDelegate:self];                                    //设置代理为自己
+    [request setDidFinishSelector:@selector(downloadFinished:)];   //设置回调方法
+    
+    [request startAsynchronous];                                   //开始异步下载
+    
+
+}
+//下载完成
+- (void)downloadFinished:(id)sender
+{
+    //解压文件
+    [self unchiveFile];
+}
+
+#pragma mark - show view
+//展示的View
+- (void)showView
+{
+//    NSLog(@"html path = %@",[self pathOfHtml]);
+    if ([self htmlIsExist])
+    {
+        
+        [self hiddenView];
+        _showWebView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+        NSURLRequest *showRequest = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:[self pathOfHtml]]];
+        [_showWebView loadRequest:showRequest];
+        [self.view addSubview:_showWebView];
+    }
+}
+
+#pragma mark - download views
+//下载中的view
+ - (void)fileDownloadView
+{
+    [self fileDownloadingDataLabel];
+    [self fileDownloadingProgressView];
+    [self fileDownloadingLabel];
+    [self fileDownloadActivityIdentifier];
+}
+//下载过程的进度条
+- (void)fileDownloadingProgressView
+{
+    _downloadProgressView = [[UIProgressView alloc] initWithFrame:CGRectMake(kWidth / 2 - 120, kHeight - kOffSet + 200, 240, 30)];
+    [self.view addSubview:_downloadProgressView];
+}
+//下载的标签
+- (void)fileDownloadingLabel
+{
+    _downloadLabel = [[UILabel alloc] initWithFrame:CGRectMake(kWidth / 2 - 80, kHeight - kOffSet, 160, 80)];
+    _downloadLabel.text = @"下载中。。。。";
+    [self.view addSubview:_downloadLabel];
+}
+//下载的进度轮
+- (void)fileDownloadActivityIdentifier
+{
+    _identifier = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(kWidth / 2 - 30, kHeight - kOffSet + 100, 60, 60)];
+    [self.view addSubview:_identifier];
+    [_identifier startAnimating];
+}
+//下载中的数据label
+- (void)fileDownloadingDataLabel
+{
+    _totleDataLabel = [[UILabel alloc] initWithFrame:CGRectMake(kWidth / 2 - 60, kHeight - kOffSet + 250, 120, 40)];
+    [self.view addSubview:_totleDataLabel];
+}
+
+//隐藏view
+- (void)hiddenView
+{
+    [_totleDataLabel setHidden:YES];
+    [_identifier stopAnimating];
+    [_downloadProgressView setHidden:YES];
+    [_currentDataLabel setHidden:YES];
+    [_downloadLabel setHidden:YES];
+}
+
+#pragma mark - unarchive method
+//解压文件
+- (void)unchiveFile
+{
+    ZipArchive *archive = [[ZipArchive alloc] init];
+    if ([archive UnzipOpenFile:[self downloadFilePath]])
+    {
+        if ([archive UnzipFileTo:[self archivePath] overWrite:YES]) {
+            NSLog(@"unarchive successful");
+            [self showView];
+        }
+        else
+        {
+            NSLog(@"unarchive failed");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"警告" message:@"文件解压失败，请重新再试" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            [alert show];
+            [alert release];
+        }
+    }
+    [archive UnzipCloseFile];
+    [archive release];
+}
+
+
+#pragma mark - file path
+//下载缓存路径
+- (NSString *)pathOfCache
+{
+    NSString *cachePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"7za920.zip.download"];
+//    NSLog(@"path = %@",cachePath);
+    return cachePath;
+}
+//下载文件路径
+- (NSString *)downloadFilePath
+{
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"7za920.zip"];
+//    NSLog(@"download file path = %@",path);
+    return path;
+}
+//解压路径
+- (NSString *)archivePath
+{
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"Unarchive"];
+//    NSLog(@"archive path = %@",path);
+    return path;
+}
+
+//网页文件路径
+- (NSString *)pathOfHtml
+{
+    NSString *path = [[self archivePath] stringByAppendingPathComponent:kPathOfHtml];
+//    NSLog(@"html path = %@", path);
+    return path;
+}
+//网页文件是否存在
+- (BOOL)htmlIsExist
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager fileExistsAtPath:[self pathOfHtml]];
+}
+
+#pragma mark - asi progress delegate method
+//下载进度条的代理方法
+- (void)setProgress:(float)newProgress
+{
+    [_downloadProgressView setProgress:newProgress];
+    _totleDataLabel.text = [NSString stringWithFormat:@"%.2f M / %.2f M",_totleSize * newProgress / 1024.0 / 1024.0, _totleSize / 1024.0 / 1024.0];
+}
+
+#pragma mark - asihttp request delegate method
+//收到数据头的回调方法
+- (void)request:(ASIHTTPRequest *)request didReceiveResponseHeaders:(NSDictionary *)responseHeaders
+{
+    if (request.contentLength != 0)
+    {
+        _totleSize = request.contentLength;
+    }
+}
+
+
+#pragma mark - dealloc
+- (void)dealloc
+{
+    [_downloadProgressView release];
+    [_totleDataLabel release];
+    [_showWebView release];
+    [_currentDataLabel release];
+    [_downloadUrl release];
+    [_identifier release];
+    [_downloadLabel release];
+    [super dealloc];
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end
